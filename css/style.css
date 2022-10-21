@@ -1,0 +1,73 @@
+:root {
+--primary-text-color: #212121;
+--ptext-color: #757575;
+--accent-color: #2196F3;
+--logofirst-color: #000000;
+--button-color: #2196F3;
+--buttonbg-color:
+
+}
+body {
+    color: #757575  ;
+    background-color:#F5F4FA ;
+    font-family: Roboto,
+}
+
+/* Основні кольори сторінки 
+фон сторінки- #F5F4FA(білий)
+акцент- FFFFFF (синій)
+колір тексту- #212121(чорний заголовки primary color)
+колір тексту- #2196F3 (синій)
+вторичний колір тексту #757575(сірий параграфи ptext-color)
+логотип Вебстудія чорний- #000000, синій-2196F3
+колір кнопки-синій фон (#2196F3)
+
+*/
+.logo {
+    color: var(--logofirst-color);
+}
+
+.list {
+    list-style: none;
+}
+
+.site-nav .link {
+color: var(--ptext-color) ;
+}
+.info-about .link {
+color: var(--ptext-color) ;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--accent-color) ;
+}
+.info-about .link:hover, 
+.info-about .link:focus {
+    color: var(--accent-color);
+}
+/* герой */
+.hero-title {
+    color: var(--primary-text-color) ;
+}
+
+
+/*секції*/
+.section-title {
+    color: var(--primary-text-color) ;
+}
+/*переваги */
+.benefits-list .list {
+    color: var(--primary-text-color) ;
+}
+/* команда */
+.team-member {
+    color: var(--primary-text-color) ;
+}
+/*кнопка*/
+.button {
+    color: var(--primary-text-color);
+    background-color: #2196F3;
+}
+.futter-number .list{
+ list-style: none;
+}
