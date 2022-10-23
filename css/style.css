@@ -3,18 +3,22 @@
 --ptext-color: #757575;
 --accent-color: #2196F3;
 --logofirst-color: #000000;
---button-color: #2196F3;
---buttonbg-color:
-
+--button-color: #FFFFFF;
+--buttonbg-color: #2196F3;
+--herobg-color: #2F303A;
+--footerbg-color: #2F303A;
 }
 body {
     color: #757575  ;
     background-color:#F5F4FA ;
-    font-family: Roboto,
+    font-family:"Raleway", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 /* Основні кольори сторінки 
 фон сторінки- #F5F4FA(білий)
+фон сторінки в секції герой-#2F303A
+фрн сторінки в секції підвалу- #2F303A
 акцент- FFFFFF (синій)
 колір тексту- #212121(чорний заголовки primary color)
 колір тексту- #2196F3 (синій)
@@ -25,6 +29,18 @@ body {
 */
 .logo {
     color: var(--logofirst-color);
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31/26);
+    initial-letter: 0.03em;
+}
+.logo-header {
+    color: var(--logofirst-color);
+}
+.logo {
+    color: var(--accent-color);
 }
 
 .list {
@@ -32,7 +48,7 @@ body {
 }
 
 .site-nav .link {
-color: var(--ptext-color) ;
+color: var(--ptext-color);
 }
 .info-about .link {
 color: var(--ptext-color) ;
@@ -47,27 +63,102 @@ color: var(--ptext-color) ;
 }
 /* герой */
 .hero-title {
-    color: var(--primary-text-color) ;
+    color: var(--button-color) ;
+    font-weight: 900;
+        font-size: 44px;
+        line-height: calc(60/44);
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+    
+        color: #FFFFFF;
+}
+.hero {
+    background-color: var(--herobg-color);
 }
 
+/*Переваги */
+.list {
+    color: var(--primary-text-color) ;
+    font-weight: 700;
+        font-size: 14px;
+        line-height: calc(16/14);
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
 
-/*секції*/
-.section-title {
-    color: var(--primary-text-color) ;
 }
-/*переваги */
-.benefits-list .list {
-    color: var(--primary-text-color) ;
+.section-titlework {
+    font-weight: 700;
+        font-size: 36px;
+        line-height: calc(42/36);
+        letter-spacing: 0.03em;
+    
+        color: var(--primary-text-color);
 }
-/* команда */
+
+/* Команда */
+.section-titleabout {
+font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42/36);
+    letter-spacing: 0.03em;
+
+    color: var(--primary-text-color);
+}
 .team-member {
     color: var(--primary-text-color) ;
+    font-weight: 500;
+        font-size: 16px;
+        line-height: calc(19/16);
+        letter-spacing: 0.03em;
+    
 }
-/*кнопка*/
-.button {
+.work {
+    font-weight: 400;
+        font-size: 16px;
+        line-height: calc(19/16);
+        letter-spacing: 0.03em;
+    
+        color: var(--ptext-color);
+}
+/*Кнопка*/
+.buttonpage {
     color: var(--primary-text-color);
-    background-color: #2196F3;
+    background-color: var(--buttonbg-color);
+    font-weight: 700;
+        font-size: 16px;
+        line-height: calc(30/16);
 }
-.futter-number .list{
+/* Підвал сторінки */
+.footer-info .element {
  list-style: none;
 }
+
+.footer-info .element {
+  color: var(--ptext-color);
+}
+.element {
+    font-weight: 400;
+        font-size: 14px;
+        line-height: calc(24/14);
+        letter-spacing: 0.03em;
+}
+
+.footer-info .element:hover,
+.footer-info .element:focus{
+    color: var(--accent-color);
+}
+.logo-footer {
+    color: var(--logofirst-color);
+    
+}
+.adress-number {
+    background-color: var(--footerbg-color);
+}
+
+
+
+
+
+
+
+
