@@ -9,27 +9,16 @@
 --footerbg-color: #2F303A;
 }
 body {
-    color: #757575  ;
-    background-color:#F5F4FA ;
-    font-family:"Raleway", sans-serif;
+    background-color: #FFFFFF;
+    font-family: "Raleway", sans-serif;
     font-family: "Roboto", sans-serif;
 }
 
-/* Основні кольори сторінки 
-фон сторінки- #F5F4FA(білий)
-фон сторінки в секції герой-#2F303A
-фрн сторінки в секції підвалу- #2F303A
-акцент- FFFFFF (синій)
-колір тексту- #212121(чорний заголовки primary color)
-колір тексту- #2196F3 (синій)
-вторичний колір тексту #757575(сірий параграфи ptext-color)
-логотип Вебстудія чорний- #000000, синій-2196F3
-колір кнопки-синій фон (#2196F3)
-
-*/
+/*------------------------ Логотип сайту------------*/
+*/ 
 .logo {
     color: var(--logofirst-color);
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
@@ -42,17 +31,22 @@ body {
 .logo {
     color: var(--accent-color);
 }
-
+/*--------------- Навігація сайту----------*/
 .list {
     list-style: none;
 }
 
-.site-nav .link {
-color: var(--ptext-color);
+.site-nav .link, .info-about .link {
+color: var(--primary-text-color);
+font-family: 'Roboto' sans-serif;
+text-decoration: none;
+text-transform: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.02em;
 }
-.info-about .link {
-color: var(--ptext-color) ;
-}
+
 .site-nav .link:hover,
 .site-nav .link:focus {
     color: var(--accent-color) ;
@@ -61,7 +55,7 @@ color: var(--ptext-color) ;
 .info-about .link:focus {
     color: var(--accent-color);
 }
-/* герой */
+/*------------------- Герой----------------------------------*/
 .hero-title {
     color: var(--button-color) ;
     font-weight: 900;
@@ -69,40 +63,53 @@ color: var(--ptext-color) ;
         line-height: calc(60/44);
         letter-spacing: 0.06em;
         text-transform: uppercase;
-    
+        
         color: #FFFFFF;
 }
 .hero {
     background-color: var(--herobg-color);
 }
 
-/*Переваги */
+/*---------------------Переваги---------------------------------*/
 .list {
-    color: var(--primary-text-color) ;
+    color: var(--logofirst-color) ;
     font-weight: 700;
+        font-family: 'Roboto', sans-serif;
         font-size: 14px;
         line-height: calc(16/14);
         letter-spacing: 0.03em;
         text-transform: uppercase;
-
+}
+.benefits-list {
+    list-style: none;
+    color: var(--ptext-color);
 }
 .section-titlework {
     font-weight: 700;
+        font-family: 'Roboto', sans-serif;
         font-size: 36px;
         line-height: calc(42/36);
         letter-spacing: 0.03em;
-    
+        
         color: var(--primary-text-color);
 }
+/*--------------------------Чим ми займаємося-----------------------*/
+.section-titlework .photo {
+    list-style: none;
+}
 
-/* Команда */
+/*---------------------- Команда------------------------------*/
 .section-titleabout {
 font-weight: 700;
+    font-family: 'Roboto', sans-serif;
     font-size: 36px;
     line-height: calc(42/36);
     letter-spacing: 0.03em;
 
     color: var(--primary-text-color);
+}
+.section-titleabout {
+    list-style: none;
 }
 .team-member {
     color: var(--primary-text-color) ;
@@ -120,21 +127,22 @@ font-weight: 700;
     
         color: var(--ptext-color);
 }
-/*Кнопка*/
+/*---------------------------Кнопка---------------------------------*/
 .buttonpage {
-    color: var(--primary-text-color);
+    color: var(--button-color);
     background-color: var(--buttonbg-color);
     font-weight: 700;
         font-size: 16px;
         line-height: calc(30/16);
 }
-/* Підвал сторінки */
+/*------------------------- Підвал сторінки-------------------------------*/
 .footer-info .element {
  list-style: none;
 }
 
 .footer-info .element {
   color: var(--ptext-color);
+  text-decoration: none;
 }
 .element {
     font-weight: 400;
@@ -145,20 +153,43 @@ font-weight: 700;
 
 .footer-info .element:hover,
 .footer-info .element:focus{
-    color: var(--accent-color);
+    color: var(--button-color);
+}
+.marker {
+    list-style: none ;
 }
 .logo-footer {
-    color: var(--logofirst-color);
+    color: var(--button-color);
     
 }
 .adress-number {
     background-color: var(--footerbg-color);
 }
+/*------------------------Сторінка Портфоліо--------------------*/
+ /* Текст заголовків - #212121;
+ текст параграфів - #757575; */
 
 
-
-
-
+.example .title {
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: calc(36/18);
+        letter-spacing: 0.06em;
+    
+        color: var(--logofirst-color);
+}
+.example .worktype {
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: calc(30/16);
+        letter-spacing: 0.03em;
+    
+        color: var(--ptext-color);
+}
 
 
 
