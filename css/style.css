@@ -17,7 +17,7 @@ body {
 /*------------------------ Логотип сайту------------*/
 */ 
 .logo {
-    color: var(--logofirst-color);
+    color: var(--logofirst-color) ;
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -27,9 +27,11 @@ body {
 }
 .logo-header {
     color: var(--logofirst-color);
+    font-weight: 700;
 }
-.logo {
+.logo-letter {
     color: var(--accent-color);
+    font-weight: 700;
 }
 /*--------------- Навігація сайту----------*/
 .list {
@@ -45,6 +47,9 @@ text-transform: none;
     font-size: 14px;
     line-height: calc(16/14);
     letter-spacing: 0.02em;
+}
+.info-about .link{
+    color: var(--ptext-color);
 }
 
 .site-nav .link:hover,
@@ -71,7 +76,7 @@ text-transform: none;
 }
 
 /*---------------------Переваги---------------------------------*/
-.list {
+.line {
     color: var(--logofirst-color) ;
     font-weight: 700;
         font-family: 'Roboto', sans-serif;
@@ -80,10 +85,15 @@ text-transform: none;
         letter-spacing: 0.03em;
         text-transform: uppercase;
 }
-.benefits-list {
+.benefits-line {
     list-style: none;
     color: var(--ptext-color);
 }
+/*------------------------Чим ми займаємося--------------------*/
+.section-titlework .list {
+    list-style: none;
+}
+
 .section-titlework {
     font-weight: 700;
         font-family: 'Roboto', sans-serif;
@@ -93,12 +103,12 @@ text-transform: none;
         
         color: var(--primary-text-color);
 }
-/*--------------------------Чим ми займаємося-----------------------*/
-.section-titlework .photo {
-    list-style: none;
-}
+
 
 /*---------------------- Команда------------------------------*/
+.section-titleabout .list {
+    list-style: none;
+}
 .section-titleabout {
 font-weight: 700;
     font-family: 'Roboto', sans-serif;
@@ -108,9 +118,7 @@ font-weight: 700;
 
     color: var(--primary-text-color);
 }
-.section-titleabout {
-    list-style: none;
-}
+
 .team-member {
     color: var(--primary-text-color) ;
     font-weight: 500;
@@ -136,16 +144,17 @@ font-weight: 700;
         line-height: calc(30/16);
 }
 /*------------------------- Підвал сторінки-------------------------------*/
-.footer-info .element {
- list-style: none;
-}
+
 
 .footer-info .element {
   color: var(--ptext-color);
   text-decoration: none;
 }
+
 .element {
-    font-weight: 400;
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
         font-size: 14px;
         line-height: calc(24/14);
         letter-spacing: 0.03em;
