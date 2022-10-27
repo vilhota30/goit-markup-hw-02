@@ -10,7 +10,6 @@
 }
 body {
     background-color: #FFFFFF;
-    font-family: "Raleway", sans-serif;
     font-family: "Roboto", sans-serif;
 }
 
@@ -29,10 +28,11 @@ body {
     color: var(--logofirst-color);
     font-weight: 700;
 }
-.logo-letter {
+.logo {
     color: var(--accent-color);
     font-weight: 700;
 }
+
 /*--------------- Навігація сайту----------*/
 .list {
     list-style: none;
@@ -76,6 +76,9 @@ text-transform: none;
 }
 
 /*---------------------Переваги---------------------------------*/
+.list {
+    list-style: none;
+}
 .line {
     color: var(--logofirst-color) ;
     font-weight: 700;
@@ -90,7 +93,7 @@ text-transform: none;
     color: var(--ptext-color);
 }
 /*------------------------Чим ми займаємося--------------------*/
-.section-titlework .list {
+.list {
     list-style: none;
 }
 
@@ -106,7 +109,7 @@ text-transform: none;
 
 
 /*---------------------- Команда------------------------------*/
-.section-titleabout .list {
+.list {
     list-style: none;
 }
 .section-titleabout {
@@ -164,7 +167,7 @@ font-weight: 700;
 .footer-info .element:focus{
     color: var(--button-color);
 }
-.marker {
+.list {
     list-style: none ;
 }
 .logo-footer {
