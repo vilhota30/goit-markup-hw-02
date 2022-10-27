@@ -14,7 +14,7 @@ body {
 }
 
 /*------------------------ Логотип сайту------------*/
-*/ 
+
 .logo {
     color: var(--logofirst-color) ;
     font-family: 'Raleway', sans-serif;
@@ -23,6 +23,7 @@ body {
     font-size: 26px;
     line-height: calc(31/26);
     initial-letter: 0.03em;
+    text-decoration: none;
 }
 .logo-header {
     color: var(--logofirst-color);
@@ -180,6 +181,9 @@ font-weight: 700;
 /*------------------------Сторінка Портфоліо--------------------*/
  /* Текст заголовків - #212121;
  текст параграфів - #757575; */
+ .list {
+    list-style: none;
+ }
 
 
 .example .title {
