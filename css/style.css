@@ -12,6 +12,20 @@ body {
     background-color: #FFFFFF;
     font-family: "Roboto", sans-serif;
 }
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ p {
+     margin: 0px;
+ }
+
+ ul {
+    margin: 0px;
+     padding-left: 0px;
+ }             
+
 
 /*------------------------ Логотип сайту------------*/
 
@@ -35,13 +49,16 @@ body {
 }
 
 /*--------------- Навігація сайту----------*/
+ /* .section { 
+  background-color: blueviolet;} */
+
 .container {
     margin-left: auto;
     margin-right: auto;
-    width: 1230px;
-    padding-left: 30px;
-    padding-right: 30px;
-    outline: 2px solid turquoise;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* outline: 2px solid orangered; */
 }
 .list {
     list-style: none;
@@ -74,9 +91,18 @@ margin-top: 0;
     color: var(--accent-color);
 }
 /*------------------- Герой----------------------------------*/
+.hero {
+    text-align: center;
+    background-color: var(--herobg-color);
+}
+.container-hero {
+    margin-bottom: 38px;
+    text-align: center;
+    background-color: var(--herobg-color);
+}
 .hero-title {
-    margin-top: 0;
-    margin-bottom: 40px;
+    margin-top: 0px;
+    margin-bottom: 100px;
     color: var(--button-color) ;
     font-weight: 900;
         font-size: 44px;
@@ -84,11 +110,12 @@ margin-top: 0;
         letter-spacing: 0.06em;
         text-transform: uppercase;
         
-        color: #FFFFFF;
+        color: var(--button-color);
 }
 .hero {
     background-color: var(--herobg-color);
 }
+
 
 /*---------------------Переваги---------------------------------*/
 .list {
@@ -97,19 +124,22 @@ margin-top: 0;
 .line {
     color: var(--logofirst-color) ;
     font-weight: 700;
+    margin-bottom: 10px;
         font-family: 'Roboto', sans-serif;
         font-size: 14px;
         line-height: calc(16/14);
         letter-spacing: 0.03em;
         text-transform: uppercase;
 }
+.text-line {
+    margin-bottom: 124px;
+}
 .title {
     margin-top: 0px;
     margin-bottom: 0px;
+    content-visibility: hidden;
 }
-.last {
-    margin-bottom: 0px;
-}
+
 .benefits-line {
     list-style: none;
     color: var(--ptext-color);
@@ -121,7 +151,7 @@ margin-top: 0;
 
 .section-titlework {
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 14px;
     font-weight: 700;
         font-family: 'Roboto', sans-serif;
         font-size: 36px;
@@ -129,6 +159,9 @@ margin-top: 0;
         letter-spacing: 0.03em;
         
         color: var(--primary-text-color);
+}
+.project {
+    margin-bottom: 200px;
 }
 
 
@@ -138,7 +171,7 @@ margin-top: 0;
 }
 .section-titleabout {
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 50px;
 font-weight: 700;
     font-family: 'Roboto', sans-serif;
     font-size: 36px;
@@ -146,6 +179,9 @@ font-weight: 700;
     letter-spacing: 0.03em;
 
     color: var(--primary-text-color);
+}
+.employee {
+    margin-bottom: 94px;
 }
 
 .team-member {
@@ -155,6 +191,10 @@ font-weight: 700;
         line-height: calc(19/16);
         letter-spacing: 0.03em;
     
+}
+
+.photo-team {
+    margin-bottom: 30px;
 }
 .work {
     font-weight: 400;
@@ -169,8 +209,17 @@ font-weight: 700;
     color: var(--button-color);
     background-color: var(--buttonbg-color);
     font-weight: 700;
+    display: inline-block;
+    min-width: 216px;
         font-size: 16px;
         line-height: calc(30/16);
+        text-align: center;
+        padding: 5px 32px 10px;
+        border: 1px solid var(--accent-color);
+        border-radius: 2px;
+}
+.buttonpage {
+    cursor: pointer;
 }
 /*------------------------- Підвал сторінки-------------------------------*/
 
@@ -193,13 +242,29 @@ font-weight: 700;
 .footer-info .element:focus{
     color: var(--button-color);
 }
+.footer-info {
+    margin-bottom: 60px;
+}
+
 .list {
     list-style: none ;
 }
+.logo-second {
+    color: var(--accent-color);
+    font-family: 'Raleway';
+    margin-bottom: 20px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: calc(31/26);
+        letter-spacing: 0.03em;
+}
+
 .logo-footer {
     color: var(--button-color);
-    
 }
+
+
 .adress-number {
     background-color: var(--footerbg-color);
 }
