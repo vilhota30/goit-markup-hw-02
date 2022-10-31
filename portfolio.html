@@ -17,97 +17,104 @@
 <body>
 <!-----------------------Шапка ------------------>
 <header>
-    <nav>
+    <div class="container">
+        <nav class="first-nav">
         <a href=" " class="logo">Web<span class="logo-header">Studio</span></a>
        
-       <ul class="site-nav list">
-       <li><a href="./index.html " class="link">Студія</a></li>
-       <li><a href="./portfolio.html" class="link">Портфоліо</a></li>
-       <li><a href="   " class="link">Контакти</a></li>
+       <ul class="site-nav link list">
+       <li class="main-nav"><a href="./index.html " class="link">Студія</a></li>
+       <li class="main-nav"><a href="./portfolio.html" class="link">Портфоліо</a></li>
+       <li class="main-nav"><a href="   " class="link">Контакти</a></li>
        </ul>
 
-</nav>
-
-<ul class="info-about list">
-    <li><a href="mailto:info@devstudio" class="link">info@devstudio</a></li>
-
-    <li><a href="tel:+380961111111" class="link">+380961111111</a></li>
-</ul>
-
+       <ul class="info-about link list">
+        <li class="main-nav"><a href="mailto:info@devstudio" class="link">info@devstudio</a></li>
+    
+        <li class="main-nav"><a href="tel:+380961111111" class="link">+380961111111</a></li>
+    </ul>
+  </nav>
+  </div>
+   
 </header> 
 <!------------Основний контент сторінки------------>
 <main>
-    <section class="work-elements">
-<h1>Portfolio</h1>
-<ul class="nav-second list">
-    <li>
-        <button type="button">Все</button>
-    </li>
-    <li>
-        <button type="button">Веб-сайти</button>
-    </li>
-    <li>
-        <button type="button">Додатки</button>
-    </li>
-    <li>
-        <button type="button">Дизайн</button>
-    </li>
-    <li>
-        <button type="button">Маркетинг</button>
-    </li>
-</ul>
-<ul class="project list">
+    <!---------------------Навігація 2 сторінки---------------------->
+    <section class="work-element">
+        <div class="container-import">
+    <div class="container-portfolio">  
+        <h1 class="about-portfolio">Portfolio</h1>
+        <ul class="nav-second list">
+            <li class="button-type">
+                <button class="menu" type="button">Усі</button>
+            </li>
+            <li class="button-type">
+                <button class="menu" type="button">Веб-сайти</button>
+            </li>
+            <li class="button-type">
+                <button class="menu" type="button">Додатки</button>
+            </li>
+            <li class="button-type">
+                <button class="menu" type="button">Дизайн</button>
+            </li>
+            <li class="button-type">
+                <button class="menu" type="button">Маркетинг</button>
+            </li>
+        </ul>
+     </div>
+<!-------------------------------Таблиця фотографій-------------------->
+<div class="project-container"> 
+    <ul class="experience list">
     <li class="example">
-        <a>
+        <a class="post-example" >
             <img src="./images/image.portfolio4/photo1.jpg" alt="Ноутбук" width="370" height="294">
-            <h2 class="title">Технокряк</h2>
-            <p class="worktype">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non rerum laborum quas.</p>
+                <h2 class="title">Технокряк</h2>
+                <p class="worktype">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non rerum laborum quas.</p> 
         </a>
     </li>
     <li class="example">
-        <a>
+        <a class="post-example">
             <img src="./images/image.portfolio4/photo2.jpg" alt="хлопці грають у волейбол" width="370" height="294">
             <h2 class="title">Постер New Orlean vs Golden Star</h2>
             <p class="worktype">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi perspiciatis incidunt animi.</p>
         </a>
     </li>
     <li class="example">
-        <a>
+        <a class="pos-example">
             <img src="./images/image.portfolio4/photo3.jpg" alt="Марка рксторану" width="370" height="294">
             <h2 class="title">Ресторан Seafood</h2>
             <p class="worktype">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur facilis accusantium odit?</p>
         </a>
     </li>
     <li class="example">
-        <a>
+        <a class="post-example">
             <img src="./images/image.portfolio4/photo4.jpg" alt="Навушники" width="370" height="294">
             <h2 class="title">Проєкт Prime</h2>
             <p class="worktype">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem similique recusandae quod!</p>
         </a>
     </li>
     <li class="example">
-        <a>
+        <a class="post-example">
             <img src="./images/image.portfolio4/photo5.jpg" alt="два бокси" width="370" height="294">
             <h2 class="title">Проєкт Boxes</h2>
             <p class="worktype">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ipsa laboriosam sit!</p>
         </a>
     </li>
     <li class="example">
-        <a>
+        <a class="post-example">
             <img src="./images/image.portfolio4/photo6.jpg" alt="Екран комп'ютера" width="370" height="294">
             <h2 class="title">Inspiration has no Borders</h2>
             <p class="worktype">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga harum animi id.</p>
         </a>
     </li>
     <li class="example">
-        <a>
+        <a class="post-example">
             <img src="./images/image.portfolio4/photo7.jpg" alt="Розгорнута книга" width="370" height="294">
             <h2 class="title">Видання Limited Edition</h2>
             <p class="worktype">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit expedita et quod.</p>
         </a>
     </li>
     <li class="example">
-        <a>
+        <a class="post-example">
             <img src="./images/image.portfolio4/photo8.jpg" alt="Бірка з надписом проєкту" width="370" height="294">
             <h2 class="title">Проєкт LAB</h2>
             <p class="worktype">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos eius dolorem beatae!
@@ -115,37 +122,40 @@
         </a>
     </li>
     <li class="example">
-        <a>
+        <a class="post-example">
             <img src="./images/image.portfolio4/photo9.jpg" alt="Руки на клавіатурі ноутбука" width="370" height="294">
             <h2 class="title">Growing Business</h2>
             <p class="worktype">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam sed officia temporibus?
             </p>
         </a>
     </li>
-</ul>
+</ul>  
+</div>
+        </div>
+
     </section>
 
 </main>
 
 <!------------------------- Підвал--------------->
 <footer class="adress-number">
-    <a href=" " class="logo">Web<span class="logo-footer">Studio</span></a>
-
-    <address>
-        <ul class="footer-info list">
-            <li>
-                <a href="https://goo.gl/maps/D6A7sHCN8AQHzFbF9" class="element">м. Київ, пр-т Лесі Українки, 26</a>
-            </li>
-            <li>
-                <a href="mailto:info@devstudio.com" class="element">info@devstudio.com</a>
-            </li>
-            <li>
-                <a href="tel:+380961111111" class="element">+380961111111</a>
-            </li>
-
-        </ul>
-    </address>
-
+    <div class="container">
+         <a href=" " class="logo-second">Web<span class="logo-footer">Studio</span></a>
+        <address>
+            <ul class="footer-info list">
+                <li>
+                    <a href="https://goo.gl/maps/D6A7sHCN8AQHzFbF9" class="element">м. Київ, пр-т Лесі Українки, 26</a>
+                </li>
+                <li>
+                    <a href="mailto:info@devstudio.com" class="element">info@devstudio.com</a>
+                </li>
+                <li>
+                    <a href="tel:+380961111111" class="element">+380961111111</a>
+                </li>
+    
+            </ul>
+        </address>
+     </div>
 </footer>
 
 </body>
