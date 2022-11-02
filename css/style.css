@@ -51,7 +51,7 @@ body {
 /*--------------- Навігація сайту----------*/
   /* .section {  
   /* background-color: blueviolet;}   */
-
+ 
 .container {
     margin-left: auto;
     margin-right: auto;
@@ -68,6 +68,9 @@ body {
 .first-nav {
     display: flex;
     align-items: center;
+    border-bottom: 2px solid var(--ptext-color);
+    box-shadow: 0 10px 10px -5px rgba(132, 128, 128, 0.3);
+
 }
 .first-nav .logo {
     margin-right: 93px;
@@ -88,7 +91,7 @@ display: block;
 }
 .info-about {
     margin-left: auto;
-    margin-right: 215px;
+    margin-right: 0px;
 }
 
 
@@ -121,11 +124,14 @@ margin-top: 0;
 }
 /*------------------- Герой----------------------------------*/
 .hero {
-    text-align: center;
-    background-color: var(--herobg-color);
+     background-color: var(--herobg-color);
 }
+.hero {
+    padding-top: 200px;
+    padding-bottom: 280px;
+}
+
 .container-hero {
-    margin-bottom: 38px;
     text-align: center;
     background-color: var(--herobg-color);
 }
@@ -147,8 +153,9 @@ margin-top: 0;
 
 
 /*---------------------Переваги---------------------------------*/
-.list {
-    list-style: none;
+.benefits-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 .line {
     color: var(--logofirst-color) ;
@@ -164,13 +171,12 @@ margin-top: 0;
     margin-bottom: 124px;
 }
 .title {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    content-visibility: hidden;
+content-visibility: hidden;
 }
 
-.benefits-line {
+ .container .benefits-line {
     display: flex;
+    align-self: flex-end;
     list-style: none;
     color: var(--ptext-color);
 }
@@ -181,12 +187,12 @@ margin-top: 0;
     margin-right: 30px;
 }
 /*------------------------Чим ми займаємося--------------------*/
-.list {
-    list-style: none;
+.section-title {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .section-titlework {
-    margin-top: 0px;
     margin-bottom: 50px;
     text-align: center;
     font-weight: 700;
@@ -199,21 +205,24 @@ margin-top: 0;
 }
 .project {
     display: flex;
-    margin-bottom: 200px;
+
 }
+
 .project .photo {
 margin-right: 30px;
 }
 
 
 /*---------------------- Команда------------------------------*/
-.list {
-    list-style: none;
+.ourteam-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 .section-titleabout {
     text-align: center;
     margin-top: 0px;
     margin-bottom: 50px;
+
 font-weight: 700;
     font-family: 'Roboto', sans-serif;
     font-size: 36px;
@@ -224,10 +233,16 @@ font-weight: 700;
 }
 .employee {
     display: flex;
-    margin-bottom: 94px;
+    background-color: var(--button-color);
+    border-bottom: 2px solid var(--ptext-color);
+    border-radius: 4px;
+    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+    
+
 }
 .team-border {
     margin-right: 30px;
+    
 }
 
 .team-member {
@@ -260,7 +275,10 @@ font-weight: 700;
         font-size: 16px;
         line-height: calc(30/16);
         text-align: center;
-        padding: 5px 32px 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 32px;
+        padding-right: 32px;
         border: 1px solid var(--accent-color);
         border-radius: 2px;
 }
@@ -268,7 +286,11 @@ font-weight: 700;
     cursor: pointer;
 }
 /*------------------------- Підвал сторінки-------------------------------*/
-
+.section-number {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--footerbg-color);
+}
 .footer-info .element {
   color: var(--ptext-color);
   text-decoration: none;
@@ -288,22 +310,20 @@ font-weight: 700;
     color: var(--button-color);
 }
 .footer-info {
-    margin-top: 20px;
-    padding-bottom: 60px;
     background-color: var(--footerbg-color);
 }
 
-.list {
-    list-style: none ;
-}
-.logo-second {
+
+.button-second {
     color: var(--accent-color);
+    margin-bottom: 20px;
     font-family: 'Raleway';
         font-style: normal;
         font-weight: 700;
         font-size: 26px;
         line-height: calc(31/26);
         letter-spacing: 0.03em;
+        text-decoration: none;
 }
 
 .logo-footer {
@@ -311,42 +331,64 @@ font-weight: 700;
 }
 
 
-.adress-number {
-    background-color: var(--footerbg-color);
-}
 /*------------------------Сторінка Портфоліо--------------------*/
  /* Текст заголовків - #212121;
  текст параграфів - #757575; */
- .list {
-    list-style: none;
- }
- .container-portfolio {
-    text-align: center;
-
+ .work-element {
+    padding-top: 94px;
+    padding-bottom: 94px;
  }
  .nav-second {
-    display: inline-flex;
-    margin-top: 97px;
+    display: flex;
+    justify-content: center;
     margin-bottom: 34px;
     color: var(--logofirst-color);
-    width: 575px;
+    /* width: 575px; */
  }
  .nav-second .menu:hover,
  .nav-second .menu:focus {
     color:var(--button-color);
     background-color: var(--accent-color);
-    border: 1 solid var(--buttonbg-color)
+    border: transparent;
+    border-radius: 2px;
+
  }
- .button-type {
+
+ .container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+ .menu {
+    border: transparent;
+    cursor: pointer;
+    margin-right: 8px;
     padding-top: 6px;
     padding-bottom: 6px;
     padding-left: 22px;
     padding-right: 22px;
  }
+ .button-type .first {
+    min-width: 73px;
+ }
+.button-type .second {
+    width: 125px;
+}
+.button-type .third {
+    width: 112px;
+}
+.button-type .fourth {
+    width: 103px;
+}
+.button-type .fifth {
+    width: 130px;
+}
 
  .about-portfolio {
     content-visibility: hidden;
- }
+ } 
   /* .work-element { 
      background-color: #2196F3; 
 } */
@@ -358,9 +400,11 @@ font-weight: 700;
         font-size: 18px;
         line-height: calc(36/18);
         letter-spacing: 0.06em;
+        content-visibility: visible;
     
         color: var(--logofirst-color);
 }
+
 .example .worktype {
     font-family: 'Roboto';
         font-style: normal;
@@ -371,14 +415,7 @@ font-weight: 700;
     
         color: var(--ptext-color);
 }
-.project-container {
-    width: 1230px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: 215px;
-    margin-right: 215px;
-    margin-bottom: 94px;
-}
+
 
 .experience {
     display: flex;
@@ -387,6 +424,7 @@ font-weight: 700;
 }
 .example {
     width: 370px;
+    height: 404px;
     margin-right: 30px;
     margin-bottom: 30px;
     /* background-color: cornflowerblue; */
