@@ -65,11 +65,12 @@ body {
     padding: 0%;
     margin: 0%;
 }
+
 .first-nav {
     display: flex;
     align-items: center;
-    border-bottom: 2px solid var(--ptext-color);
-    box-shadow: 0 10px 10px -5px rgba(132, 128, 128, 0.3);
+    border-bottom: 4px solid gray;
+    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.5);
 
 }
 .first-nav .logo {
@@ -118,6 +119,12 @@ margin-top: 0;
 .site-nav .link:focus {
     color: var(--accent-color) ;
 }
+.site-nav .active {
+    color: var(--accent-color);
+    background-color: var(--button-color);
+}
+
+
 .info-about .link:hover, 
 .info-about .link:focus {
     color: var(--accent-color);
@@ -234,14 +241,17 @@ font-weight: 700;
 .employee {
     display: flex;
     background-color: var(--button-color);
-    border-bottom: 2px solid var(--ptext-color);
+    /* border-bottom: 2px solid var(--ptext-color);
     border-radius: 4px;
     box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3);
-    
+     */
 
 }
 .team-border {
     margin-right: 30px;
+    border-bottom: 2px solid var(--ptext-color);
+    border-radius: 4px;
+    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3);
     
 }
 
@@ -310,6 +320,7 @@ font-weight: 700;
     color: var(--button-color);
 }
 .footer-info {
+    margin-top: 20px;
     background-color: var(--footerbg-color);
 }
 
