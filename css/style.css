@@ -49,16 +49,15 @@ body {
 }
 
 /*--------------- Навігація сайту----------*/
-  /* .section {  
-  /* background-color: blueviolet;}   */
- 
+  
+
 .container {
     margin-left: auto;
     margin-right: auto;
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-      /* outline: 2px solid orangered; */
+
     } 
 .list {
     list-style: none;
@@ -241,10 +240,6 @@ font-weight: 700;
 .employee {
     display: flex;
     background-color: var(--button-color);
-    /* border-bottom: 2px solid var(--ptext-color);
-    border-radius: 4px;
-    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3);
-     */
 
 }
 .team-border {
@@ -343,8 +338,7 @@ font-weight: 700;
 
 
 /*------------------------Сторінка Портфоліо--------------------*/
- /* Текст заголовків - #212121;
- текст параграфів - #757575; */
+ 
  .work-element {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -400,9 +394,7 @@ font-weight: 700;
  .about-portfolio {
     content-visibility: hidden;
  } 
-  /* .work-element { 
-     background-color: #2196F3; 
-} */
+ 
 
 .example .title {
     font-family: 'Roboto';
@@ -438,8 +430,8 @@ font-weight: 700;
     height: 404px;
     margin-right: 30px;
     margin-bottom: 30px;
-    /* background-color: cornflowerblue; */
 
+    
 } 
 .example:nth-child(3n) {
     margin-right: 0px;
