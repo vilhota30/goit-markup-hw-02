@@ -25,7 +25,9 @@ body {
     margin: 0px;
     padding-left: 0px;
  }             
-
+ img {
+    display: block;
+ }
 
 /*------------------------ Логотип сайту------------*/
 
@@ -58,7 +60,14 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 
-    } 
+}
+/*------------------------------ Підкреслення шапки--------------------------- */
+ .section-header {
+    border-bottom: 1px solid #c0c0c0;
+    
+}
+
+
 .list {
     list-style: none;
     padding: 0%;
@@ -68,8 +77,6 @@ body {
 .first-nav {
     display: flex;
     align-items: center;
-    border-bottom: 4px solid gray;
-    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.5);
 
 }
 .first-nav .logo {
@@ -129,12 +136,19 @@ margin-top: 0;
     color: var(--accent-color);
 }
 /*------------------- Герой----------------------------------*/
-.hero {
-     background-color: var(--herobg-color);
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+
 }
+
 .hero {
     padding-top: 200px;
-    padding-bottom: 280px;
+    padding-bottom: 200px;
+    background-color: var(--herobg-color);
 }
 
 .container-hero {
@@ -159,6 +173,15 @@ margin-top: 0;
 
 
 /*---------------------Переваги---------------------------------*/
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
 .benefits-section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -173,9 +196,7 @@ margin-top: 0;
         letter-spacing: 0.03em;
         text-transform: uppercase;
 }
-.text-line {
-    margin-bottom: 124px;
-}
+
 .title {
 content-visibility: hidden;
 }
@@ -193,8 +214,17 @@ content-visibility: hidden;
     margin-right: 30px;
 }
 /*------------------------Чим ми займаємося--------------------*/
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
 .section-title {
-    padding-top: 94px;
+
     padding-bottom: 94px;
 }
 
@@ -220,9 +250,19 @@ margin-right: 30px;
 
 
 /*---------------------- Команда------------------------------*/
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
 .ourteam-section {
     padding-top: 94px;
     padding-bottom: 94px;
+    background-color: #F5F4FA;;
 }
 .section-titleabout {
     text-align: center;
@@ -244,9 +284,9 @@ font-weight: 700;
 }
 .team-border {
     margin-right: 30px;
-    border-bottom: 2px solid var(--ptext-color);
-    border-radius: 4px;
-    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+    background-color: var(--button-color);
+    border-bottom: 2px solid #afb8b1;
+    box-shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     
 }
 
@@ -291,6 +331,15 @@ font-weight: 700;
     cursor: pointer;
 }
 /*------------------------- Підвал сторінки-------------------------------*/
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
 .section-number {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -318,7 +367,12 @@ font-weight: 700;
     margin-top: 20px;
     background-color: var(--footerbg-color);
 }
-
+.footer-info .contacts {
+    margin-bottom: 9px;
+}
+.footer-info .contacts:last-child {
+    margin-bottom: 0px;
+}
 
 .button-second {
     color: var(--accent-color);
@@ -338,6 +392,15 @@ font-weight: 700;
 
 
 /*------------------------Сторінка Портфоліо--------------------*/
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
  
  .work-element {
     padding-top: 94px;
@@ -358,13 +421,6 @@ font-weight: 700;
     border-radius: 2px;
 
  }
-
- .container {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
 
  .menu {
     border: transparent;
