@@ -63,7 +63,7 @@ body {
 }
 /*------------------------------ Підкреслення шапки--------------------------- */
  .section-header {
-    border-bottom: 1px solid #c0c0c0;
+    border-bottom: 1px solid #f1f1f1;
     
 }
 
@@ -153,11 +153,10 @@ margin-top: 0;
 
 .container-hero {
     text-align: center;
-    background-color: var(--herobg-color);
+
 }
 .hero-title {
-    margin-top: 0px;
-    margin-bottom: 100px;
+    margin-bottom: 30px;
     color: var(--button-color) ;
     font-weight: 900;
         font-size: 44px;
@@ -167,9 +166,7 @@ margin-top: 0;
         
         color: var(--button-color);
 }
-.hero {
-    background-color: var(--herobg-color);
-}
+
 
 
 /*---------------------Переваги---------------------------------*/
@@ -195,6 +192,13 @@ margin-top: 0;
         line-height: calc(16/14);
         letter-spacing: 0.03em;
         text-transform: uppercase;
+}
+.text-line {
+    font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: calc(24/14);
+        letter-spacing: 0.03em;
 }
 
 .title {
@@ -279,18 +283,20 @@ font-weight: 700;
 }
 .employee {
     display: flex;
-    background-color: var(--button-color);
+
 
 }
 .team-border {
     margin-right: 30px;
     background-color: var(--button-color);
     border-bottom: 2px solid #afb8b1;
+    border-radius: 4px;
     box-shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     
 }
 
 .team-member {
+    margin-bottom: 10px;
     color: var(--primary-text-color) ;
     font-weight: 500;
         font-size: 16px;
@@ -302,7 +308,11 @@ font-weight: 700;
 .photo-team {
     margin-bottom: 30px;
 }
+.group-center {
+text-align: center;
+}
 .work {
+    margin-bottom: 30px;
     font-weight: 400;
         font-size: 16px;
         line-height: calc(19/16);
@@ -430,6 +440,14 @@ font-weight: 700;
     padding-bottom: 6px;
     padding-left: 22px;
     padding-right: 22px;
+    border-radius: 4px;
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: calc(26/16);
+        text-align: center;
+        letter-spacing: 0.03em;
  }
  .button-type .first {
     min-width: 73px;
@@ -450,9 +468,20 @@ font-weight: 700;
  .about-portfolio {
     content-visibility: hidden;
  } 
+ .exstra {
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border-bottom: 1px solid #f1f1f1;
+    border-left: 1px solid #f1f1f1;
+    border-right: 1px solid #f1f1f1;
+    box-shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));;
+
+ }
  
 
 .example .title {
+    margin-bottom: 4px;
     font-family: 'Roboto';
         font-style: normal;
         font-weight: 700;
@@ -482,8 +511,7 @@ font-weight: 700;
 
 }
 .example {
-    width: 370px;
-    height: 404px;
+
     margin-right: 30px;
     margin-bottom: 30px;
 
