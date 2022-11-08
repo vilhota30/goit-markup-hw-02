@@ -61,6 +61,7 @@ body {
     padding-right: 15px;
 
 }
+
 /*------------------------------ Підкреслення шапки--------------------------- */
  .section-header {
     border-bottom: 1px solid #f1f1f1;
@@ -121,13 +122,21 @@ margin-top: 0;
     color: var(--ptext-color);
 }
 
+
+
 .site-nav .link:hover,
 .site-nav .link:focus {
     color: var(--accent-color) ;
 }
+
 .site-nav .active {
     color: var(--accent-color);
     background-color: var(--button-color);
+}
+.info-about .main-nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 
@@ -135,6 +144,12 @@ margin-top: 0;
 .info-about .link:focus {
     color: var(--accent-color);
 }
+
+.info-icon,
+.info-header {
+    fill: currentColor;
+}
+
 /*------------------- Герой----------------------------------*/
 .container {
     margin-left: auto;
@@ -210,6 +225,14 @@ margin-top: 0;
         letter-spacing: 0.03em;
         text-transform: uppercase;
 }
+ /* .benefits-group::before {
+    content:"";
+    width: 70px;
+    height:70px;
+    background-size: contain;
+    background-image: url("https:/images/icons/antena.svg");
+} */
+
 .text-line {
     font-family: 'Roboto';
         font-weight: 400;
@@ -307,10 +330,7 @@ font-weight: 700;
     text-align: center;
     gap: 10px;
 }
-.socials-iteam{
-    width: 44px;
-    height: 44px;
-}
+
 
  .socials-link {
     display: flex;
@@ -319,23 +339,24 @@ font-weight: 700;
     width: 44px;
     height: 44px;
     border-radius: 50px;
+    color: #afb1b8;
     background-color: var(--button-color);
-    outline: 2px solid var(--button-color);
+
+    outline: 2px solid transparent;
     outline-offset: -2px;
     
  }
- .socials-link:hover .socials-icon,
- .social-link:focus .socials-icon {
-    fill: var(--button-color);
+
+ .socials-link:hover,
+ .social-link:focus {
+    color: var(--button-color);
     background-color: var(--accent-color);
-    border-radius: 50%;
-    outline: var(--accent-color) ;
-    outline-offset: -2px;
- }
+
+}
+
 
  .socials-icon {
-    fill: #afb1b8;
-    background-color: var(--button-color);
+    fill: currentColor;
  }
 
 .team-border {
