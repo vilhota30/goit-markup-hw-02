@@ -255,6 +255,8 @@ content-visibility: hidden;
     list-style: none;
     color: var(--ptext-color);
 }
+/* ----------------------------Переваги-Іконки------------------------------ */
+
 .text-nodestart {
     display: inline-flex;
     flex-direction: column;
@@ -393,6 +395,7 @@ font-weight: 700;
 .employee {
     display: flex;
 }
+/*----------------------------------- Посилання на соціальні мережі в секції Наша команда-----------------------  */
 .socials {
     display: flex;
     justify-content: center;
@@ -427,6 +430,7 @@ font-weight: 700;
  .socials-icon {
     fill: currentColor;
  }
+ /*--------------------------------------------------------------------------- */
 
 .team-border {
     margin-right: 30px;
@@ -463,6 +467,8 @@ text-align: center;
     
         color: var(--ptext-color);
 }
+
+/*--------------------------------------Секція Постійні клієнти------------------------------*/
 .container {
         margin-left: auto;
         margin-right: auto;
@@ -593,7 +599,7 @@ text-align: center;
     color: var(--button-color);
 }
 
-  /*--------------------------------------- Приєднуйтесь посилання на соцмережі ----------------------- */
+  /*--------------------------- Приєднуйтесь посилання на соцмережі в підвалі ----------------------- */
 
 .jointoday {
     display:inline-block;
