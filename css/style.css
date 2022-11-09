@@ -97,6 +97,7 @@ display: block;
 .info-about .main-nav:not(:last-child) {
     margin-right: 50px;
 }
+
 .info-about {
     margin-left: auto;
     margin-right: 0px;
@@ -148,6 +149,7 @@ margin-top: 0;
 .info-icon,
 .info-header {
     fill: currentColor;
+    margin-right: 10px;
 }
 
 /*------------------- Герой----------------------------------*/
@@ -225,6 +227,8 @@ margin-top: 0;
         letter-spacing: 0.03em;
         text-transform: uppercase;
 }
+
+
  /* .benefits-group::before {
     content:"";
     width: 70px;
@@ -251,6 +255,71 @@ content-visibility: hidden;
     list-style: none;
     color: var(--ptext-color);
 }
+.text-nodestart {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.text-nodestart::before {
+    content: "";
+    width: 70px;
+    height: 70px;
+    background-size: contain;
+    background-image: url(/images/icons/antena.svg);
+    background-repeat: no-repeat;
+    padding: 25px 100px;
+   margin-bottom: 30px;
+}
+
+ .text-nodecenter::before {
+        content: "";
+        width: 70px;
+        height: 70px;
+        background-size: contain;
+        background-image: url(/images/icons/clock.svg);
+        background-repeat: no-repeat;
+        padding: 25px 100px;
+        margin-bottom: 30px;
+
+ }
+ .text-nodecenter {
+     display: inline-flex;
+     flex-direction: column;
+     align-items: center;
+ }
+
+ .text-nodemiddle::before {
+    content: "";
+    width: 70px;
+    height: 70px;
+    background-size: contain;
+    background-image: url(/images/icons/diagram.svg);
+    background-repeat: no-repeat;
+    padding: 25px 100px;
+    margin-bottom: 30px;
+ }
+ .text-nodemiddle {
+    display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+ }
+.text-nodefinish::before {
+        content: "";
+        width: 70px;
+        height: 70px;
+        background-size: contain;
+        background-image: url(/images/icons/astronaut.svg);
+        background-repeat: no-repeat;
+        padding: 25px 100px;
+        margin-bottom: 30px;
+}
+.text-nodefinish {
+    display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+}
+
 .benefits-line .text-node {
     min-width: 270px;
 }
@@ -394,6 +463,49 @@ text-align: center;
     
         color: var(--ptext-color);
 }
+.container {
+        margin-left: auto;
+        margin-right: auto;
+        width: 1200px;
+        padding-left: 15px;
+        padding-right: 15px;
+}
+.customers {
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: calc(42/36);
+        text-align: center;
+        color: #212121;
+}
+
+.regularclients-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 94px;
+
+}
+.regularclients-list:not(:last-child) {
+    margin-right: 0px;
+}
+.number-client {
+    padding: 16px 32px;
+    margin-right: 30px;
+}
+.client-icon {
+    fill: #afb1b8;
+}
+.client-icon:hover,
+.client-icon:focus {
+    fill: var(--accent-color);
+
+}
+
 /*---------------------------Кнопка---------------------------------*/
 .buttonpage {
     color: var(--button-color);
@@ -415,6 +527,12 @@ text-align: center;
     cursor: pointer;
 }
 /*------------------------- Підвал сторінки-------------------------------*/
+.together-list {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
 .container {
     margin-left: auto;
     margin-right: auto;
@@ -449,6 +567,7 @@ text-align: center;
 }
 .footer-info {
     margin-top: 20px;
+    margin-right: 70px;
     background-color: var(--footerbg-color);
 }
 .footer-info .contacts {
@@ -472,6 +591,55 @@ text-align: center;
 
 .logo-footer {
     color: var(--button-color);
+}
+
+  /*--------------------------------------- Приєднуйтесь посилання на соцмережі ----------------------- */
+
+.jointoday {
+    display:inline-block;
+    align-items: center;
+    flex-direction: column ;
+}
+.jointoday-title {
+    margin-bottom: 20px;
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height:calc(16/14);
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+
+}
+.socialsgroup {
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+}
+
+ .connect-link {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 44px;
+     height: 44px;
+     border-radius: 50px;
+     color: #afb1b8;
+     background-color: #3b3c49;
+
+     outline: 2px solid transparent;
+     outline-offset: -2px;
+
+ }
+
+.connect-link:hover,
+.connect-link:focus:focus {
+    color: var(--button-color);
+    background-color: var(--accent-color);
+
 }
 
 
