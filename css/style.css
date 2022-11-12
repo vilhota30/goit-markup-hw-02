@@ -151,6 +151,28 @@ margin-top: 0;
     fill: currentColor;
     margin-right: 10px;
 }
+.main-nav {
+    position: relative;
+}
+.main-nav .link::after {
+    content: "";
+    position:absolute;
+    left: 50%;
+    bottom: 0;
+
+    transform: translateX(-50%) scaleX(0.3);
+    display: block;
+    width: 95%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+    opacity: 0;
+}
+.main-nav .link:hover::after,
+.main-nav .link:focus::after {
+    transform: translateX(-50%) scaleX(1);
+    opacity: 1;
+}
 
 /*------------------- Герой----------------------------------*/
 .container {
@@ -359,10 +381,31 @@ content-visibility: hidden;
 
 }
 
-.project .photo {
+.project .photo-work {
 margin-right: 30px;
 }
 
+
+.photo-work {
+    position: relative;
+}
+
+.input-column {
+    position: absolute;
+    bottom: 0 px;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    background-color:rgba(47, 48, 58, 0.8);
+    backdrop-filter: blur(4px);
+
+}
+.input-text {
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--button-color);
+}
 
 /*---------------------- Команда------------------------------*/
 .container {
