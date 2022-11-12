@@ -377,7 +377,10 @@ margin-right: 30px;
 .ourteam-section {
     padding-top: 94px;
     padding-bottom: 94px;
-    background-color: #F5F4FA;;
+    background-color: #F5F4FA;
+}
+.team-border {
+    background-color: #F5F4FA ;
 }
 .section-titleabout {
     text-align: center;
@@ -401,6 +404,12 @@ font-weight: 700;
     justify-content: center;
     text-align: center;
     gap: 10px;
+}
+.group-center {
+    padding-bottom: 30px;
+    padding-left: 32px;
+    padding-right: 32px;
+
 }
 
 
@@ -476,6 +485,10 @@ text-align: center;
         padding-left: 15px;
         padding-right: 15px;
 }
+.clients-section {
+padding-top: 94px;
+padding-bottom: 94px;
+}
 .customers {
     text-align: center;
     margin-bottom: 50px;
@@ -500,14 +513,24 @@ text-align: center;
     margin-right: 0px;
 }
 .number-client {
+    border: 2px solid #afb1b8;
+    border-radius: 4px;
+}
+.number-client {
     padding: 16px 32px;
+}
+.number-client {
     margin-right: 30px;
 }
-.client-icon {
+.number-client:not(:last-child) {
+    margin-right: 30px;
+}
+
+.clients-link {
     fill: #afb1b8;
 }
-.client-icon:hover,
-.client-icon:focus {
+.clients-link:hover,
+.clients-link:focus {
     fill: var(--accent-color);
 
 }
@@ -533,18 +556,24 @@ text-align: center;
     cursor: pointer;
 }
 /*------------------------- Підвал сторінки-------------------------------*/
-.together-list {
+.container-footer {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-}
-
-.container {
+    align-items: baseline;
     margin-left: auto;
     margin-right: auto;
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
+
+}
+
+.first-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 70px;
+
 
 }
 
@@ -603,7 +632,7 @@ text-align: center;
 
 .jointoday {
     display:inline-block;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column ;
 }
 .jointoday-title {
@@ -633,7 +662,7 @@ text-align: center;
      width: 44px;
      height: 44px;
      border-radius: 50px;
-     color: #afb1b8;
+     color: var(--button-color);
      background-color: #3b3c49;
 
      outline: 2px solid transparent;
@@ -677,7 +706,7 @@ text-align: center;
     background-color: var(--accent-color);
     border: transparent;
     border-radius: 2px;
-
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
  }
 
  .menu {
@@ -723,10 +752,15 @@ text-align: center;
     border-bottom: 1px solid #f1f1f1;
     border-left: 1px solid #f1f1f1;
     border-right: 1px solid #f1f1f1;
-    box-shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));;
+    
 
  }
+ .exstra:hover,
+ .exstra:focus {
+   box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+ }
  
+
 
 .example .title {
     margin-bottom: 4px;
@@ -765,6 +799,8 @@ text-align: center;
 
     
 } 
+
+
 .example:nth-child(3n) {
     margin-right: 0px;
 }
