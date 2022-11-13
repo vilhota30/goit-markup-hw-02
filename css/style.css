@@ -102,6 +102,9 @@ display: block;
     margin-left: auto;
     margin-right: 0px;
 }
+.info-about .menu-select {
+    margin-right: 30px;
+}
 
 
 .site-nav .link, .info-about .link {
@@ -119,7 +122,7 @@ margin-top: 0;
     line-height: calc(16/14);
     letter-spacing: 0.02em;
 }
-.info-about .link{
+.info-about .link {
     color: var(--ptext-color);
 }
 
@@ -134,11 +137,11 @@ margin-top: 0;
     color: var(--accent-color);
     background-color: var(--button-color);
 }
-.info-about .main-nav {
+ .info-about .main-nav {
     display: flex;
     align-items: center;
     gap: 10px;
-}
+} 
 
 
 .info-about .link:hover, 
@@ -150,6 +153,10 @@ margin-top: 0;
 .info-header {
     fill: currentColor;
     margin-right: 10px;
+    
+}
+.info-about .main-nav {
+    justify-content: center;
 }
 .main-nav {
     position: relative;
@@ -278,6 +285,9 @@ content-visibility: hidden;
     color: var(--ptext-color);
 }
 /* ----------------------------Переваги-Іконки------------------------------ */
+.text-size {
+    margin-right: 30px;
+}
 
 .text-nodestart {
     display: inline-flex;
@@ -292,6 +302,7 @@ content-visibility: hidden;
     background-size: contain;
     background-image: url(../images/icons/antena.svg);
     background-repeat: no-repeat;
+    background-color: #F5F4FA;
     padding: 25px 100px;
    margin-bottom: 30px;
 }
@@ -303,6 +314,7 @@ content-visibility: hidden;
         background-size: contain;
         background-image: url(../images/icons/clock.svg);
         background-repeat: no-repeat;
+        background-color: #F5F4FA;
         padding: 25px 100px;
         margin-bottom: 30px;
 
@@ -320,6 +332,7 @@ content-visibility: hidden;
     background-size: contain;
     background-image: url(../images/icons/diagram.svg);
     background-repeat: no-repeat;
+    background-color: #F5F4FA;
     padding: 25px 100px;
     margin-bottom: 30px;
  }
@@ -335,6 +348,7 @@ content-visibility: hidden;
         background-size: contain;
         background-image: url(../images/icons/astronaut.svg);
         background-repeat: no-repeat;
+        background-color: #F5F4FA;
         padding: 25px 100px;
         margin-bottom: 30px;
 }
@@ -511,7 +525,7 @@ font-weight: 700;
 text-align: center;
 }
 .work {
-    margin-bottom: 30px;
+    margin-bottom: 16px;
     font-weight: 400;
         font-size: 16px;
         line-height: calc(19/16);
@@ -530,7 +544,7 @@ text-align: center;
 }
 .clients-section {
 padding-top: 94px;
-padding-bottom: 0px;
+padding-bottom: 94px;
 }
 .customers {
     text-align: center;
@@ -555,19 +569,24 @@ padding-bottom: 0px;
 .regularclients-list:not(:last-child) {
     margin-right: 0px;
 }
-.number-client {
-    border: 2px solid #afb1b8;
-    border-radius: 4px;
+.clients-link {
+    display: inline-block;
+    min-height: 92px;
+    min-width: 170px;
+     border: 1px solid #afb1b8;
+    border-radius: 4px; 
 }
-.number-client {
-    padding: 16px 32px;
+ 
+.client-icon {
+    display:  inline-flex;
+    align-items: center;
+    margin: 16px 32px;
 }
-.number-client {
-    margin-right: 30px;
-}
+ 
 .number-client:not(:last-child) {
     margin-right: 30px;
 }
+
 
 .clients-link {
     fill: #afb1b8;
@@ -575,6 +594,7 @@ padding-bottom: 0px;
 .clients-link:hover,
 .clients-link:focus {
     fill: var(--accent-color);
+    border: transparent;
 
 }
 
@@ -626,12 +646,13 @@ padding-bottom: 0px;
     background-color: var(--footerbg-color);
 }
 .footer-info .element {
-  color: var(--ptext-color);
+
   text-decoration: none;
 }
 
 .element {
     font-family: 'Roboto';
+    color: rgba(255, 255, 255, 0.6);
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -644,7 +665,7 @@ padding-bottom: 0px;
     color: var(--button-color);
 }
 .footer-info {
-    margin-top: 20px;
+
     margin-right: 70px;
     background-color: var(--footerbg-color);
 }
@@ -739,9 +760,9 @@ padding-bottom: 0px;
  .nav-second {
     display: flex;
     justify-content: center;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
     color: var(--logofirst-color);
-    /* width: 575px; */
+   
  }
  .nav-second .menu:hover,
  .nav-second .menu:focus {
@@ -799,11 +820,11 @@ padding-bottom: 0px;
 
  }
  
- .example {
+ .post-example {
     display: inline-block;
  }
- .example:hover,
- .example:focus {
+ .post-example:hover,
+ .post-example:focus {
  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
  }
 
