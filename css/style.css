@@ -106,6 +106,11 @@ display: block;
     margin-right: 30px;
 }
 
+.link {
+    display: flex;
+    align-items: center;
+}
+
 
 .site-nav .link, .info-about .link {
 color: var(--primary-text-color);
@@ -297,25 +302,25 @@ content-visibility: hidden;
 }
 .text-nodestart::before {
     content: "";
-    width: 70px;
-    height: 70px;
-    background-size: contain;
+    width: 270px;
+    height: 120px;
+    background-size: auto;
     background-image: url(../images/icons/antena.svg);
     background-repeat: no-repeat;
+    background-position: center;
     background-color: #F5F4FA;
-    padding: 25px 100px;
-   margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 
  .text-nodecenter::before {
         content: "";
-        width: 70px;
-        height: 70px;
-        background-size: contain;
+        width: 270px;
+        height: 120px;
+        background-size: auto;
         background-image: url(../images/icons/clock.svg);
         background-repeat: no-repeat;
+        background-position: center;
         background-color: #F5F4FA;
-        padding: 25px 100px;
         margin-bottom: 30px;
 
  }
@@ -327,13 +332,13 @@ content-visibility: hidden;
 
  .text-nodemiddle::before {
     content: "";
-    width: 70px;
-    height: 70px;
-    background-size: contain;
+    width: 270px;
+    height: 120px;
+    background-size: auto;
     background-image: url(../images/icons/diagram.svg);
     background-repeat: no-repeat;
+    background-position: center;
     background-color: #F5F4FA;
-    padding: 25px 100px;
     margin-bottom: 30px;
  }
  .text-nodemiddle {
@@ -343,13 +348,13 @@ content-visibility: hidden;
  }
 .text-nodefinish::before {
         content: "";
-        width: 70px;
-        height: 70px;
-        background-size: contain;
+        width: 270px;
+        height: 120px;
+        background-size: auto;
         background-image: url(../images/icons/astronaut.svg);
         background-repeat: no-repeat;
+        background-position: center;
         background-color: #F5F4FA;
-        padding: 25px 100px;
         margin-bottom: 30px;
 }
 .text-nodefinish {
@@ -563,18 +568,19 @@ padding-bottom: 94px;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-bottom: 94px;
+
 
 }
 .regularclients-list:not(:last-child) {
     margin-right: 0px;
 }
 .clients-link {
-    display: inline-block;
-    padding: 16px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     min-height: 92px;
     min-width: 170px;
-     border: 1px solid #afb1b8;
+    border: 1px solid #afb1b8;
     border-radius: 4px; 
 }
  
@@ -595,14 +601,14 @@ padding-bottom: 94px;
 .clients-link:hover,
 .clients-link:focus {
     fill: var(--accent-color);
-    border: transparent;
-
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
 }
 
 /*---------------------------Кнопка---------------------------------*/
 .buttonpage {
     color: var(--button-color);
-    background-color: var(--buttonbg-color);
+    background-color: var(--accent-color);
     font-weight: 700;
     display: inline-block;
     min-width: 216px;
@@ -713,7 +719,6 @@ padding-bottom: 94px;
 
 }
 .socialsgroup {
-    margin-bottom: 100px;
     display: flex;
     justify-content: center;
     text-align: center;
