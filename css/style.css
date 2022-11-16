@@ -129,6 +129,8 @@ margin-top: 0;
 }
 .info-about .link {
     color: var(--ptext-color);
+    display: flex;
+    align-items: center;
 }
 
 
@@ -673,7 +675,7 @@ padding-bottom: 94px;
 }
 .footer-info {
 
-    margin-right: 70px;
+    /* margin-right: 70px; */
     background-color: var(--footerbg-color);
 }
 .footer-info .contacts {
