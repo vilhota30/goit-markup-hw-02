@@ -957,6 +957,7 @@ padding-bottom: 94px;
     transition: opacity 150ms linear, visibility 150ms linear;
 
 }
+
 .backdrop.is-hidden {
     opacity: 0px;
     visibility: hidden;
@@ -979,7 +980,7 @@ padding-bottom: 94px;
 
 } 
 
-.backdrop.is-hidden .modal {
+.backdrop .is-hidden .modal {
     opacity: 0px;
     transform: translateX(-50%) translateY(-50%);
 
@@ -997,7 +998,7 @@ padding-bottom: 94px;
     
     width: 40px;
     height: 35px;
-    background-color: var(--buttonbg-color);
+
     border-radius: 50%;
     border: 1px solid transparent;
     cursor: pointer;
