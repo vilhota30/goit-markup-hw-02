@@ -130,6 +130,10 @@ margin-top: 0;
     font-size: 14px;
     line-height: calc(16/14);
     letter-spacing: 0.02em;
+    
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .info-about .link {
@@ -145,6 +149,11 @@ margin-top: 0;
     color: var(--accent-color) ;
 }
 
+.info-about .link:hover,
+.info-about .link:focus {
+    color: var(--accent-color);
+}
+
 .site-nav .active {
     color: var(--accent-color);
     background-color: var(--button-color);
@@ -156,10 +165,7 @@ margin-top: 0;
  }
 
 
-.info-about .link:hover, 
-.info-about .link:focus {
-    color: var(--accent-color);
-}
+
 
 .info-icon,
 .info-header {
@@ -173,7 +179,7 @@ margin-top: 0;
 .main-nav .active {
     position: relative;
 }
-.main-nav .link::after {
+.site-nav .link::after {
     content: "";
     position:absolute;
     left: 50%;
@@ -187,11 +193,11 @@ margin-top: 0;
     background-color: var(--accent-color);
     opacity: 0;
 }
-.main-nav .link:hover::after,
-.main-nav .link:focus::after {
+.site-nav .link::after,
+.site-nav .link::after {
     transform: translateX(-50%) scaleX(1);
     opacity: 1;
-}
+} 
 
 /*------------------- Герой----------------------------------*/
 .container {
@@ -270,13 +276,7 @@ margin-top: 0;
 }
 
 
- /* .benefits-group::before {
-    content:"";
-    width: 70px;
-    height:70px;
-    background-size: contain;
-    background-image: url("https:/images/icons/antena.svg");
-} */
+
 
 .text-line {
     font-family: 'Roboto';
@@ -428,6 +428,13 @@ margin-right: 30px;
     text-transform: uppercase;
     text-align: center;
     color: var(--button-color);
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: calc(16/14);
+        text-align: center;
+        letter-spacing: 0.03em;
 }
 
 /*---------------------- Команда------------------------------*/
@@ -591,8 +598,8 @@ padding-bottom: 94px;
     border: 1px solid #afb1b8;
     border-radius: 4px; 
 
-    transition-property: color, border-radius;
-    transition-duration: 250s;
+    transition-property: color;
+    transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
@@ -787,8 +794,8 @@ padding-bottom: 94px;
     margin-bottom: 50px;
     color: var(--logofirst-color);
 
-    transition-property: color, background-color;
-    transition-duration: 250s;
+    transition-property: color, border;
+    transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
    
  }
@@ -817,6 +824,10 @@ padding-bottom: 94px;
         line-height: calc(26/16);
         text-align: center;
         letter-spacing: 0.03em;
+
+        transition-property:color, background-color, box-shadow;
+        transition-duration:250ms;
+        transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
  }
  .button-type .first {
     min-width: 73px;
@@ -850,6 +861,9 @@ padding-bottom: 94px;
  
  .post-example {
     display: block;
+    transition-property: box-shadow;
+    transition-duration:250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
  }
  .post-example:hover,
  .post-example:focus {
@@ -922,7 +936,8 @@ padding-bottom: 94px;
     background: rgba(33, 150, 243, 0.9);
     backdrop-filter: blur(3px);
     
-    transition-duration: 1000ms;
+    transition-property: color, transform;
+    transition-duration:250ms;
     transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
     
 }
