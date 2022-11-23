@@ -59,7 +59,7 @@
     <section class="hero overlay">
         <div class="container-hero">
             <h1 class="hero-title">Ефективні рішення<br>для вашого бізнесу</h1>
-        <a href=""><button type="button" class="buttonpage">Замовити послугу</button></a>
+    <button type="button" data-modal-open class="buttonpage">Замовити послугу</button>
     </div>
     </section>
 
@@ -447,12 +447,12 @@
 </footer>
 
 <!----------------------------Modal window-------------------------->
- <button data-modal-open>Замовити послугу</button>
+
 
  <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-     <button class="btn-close">
-        <svg class="modal-icon" width="18" height="18" data-modal-close>
+     <button data-modal-close class="btn-close">
+        <svg class="modal-icon" width="18" height="18">
             <use href="./images/sprite.svg#icon-buttonclose"></use>
         </svg>
     </button>
