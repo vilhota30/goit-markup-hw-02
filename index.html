@@ -456,6 +456,26 @@
             <use href="./images/sprite.svg#icon-buttonclose"></use>
         </svg>
     </button>
+            <b class="information-title">Залиште свої дані, ми вам передзвонимо</b>
+        <form class="information">
+            <label class="datalist" for="user_name">Ім'я</label>
+            <input class="baseword" type="name" name="name" id="user_name" placeholder="Кравченко Степан"/>
+        
+            <label class="datalist" for="user_number">Телефон</label>
+            <input class="baseword" type="tel" name="phone_number" id="user_number" placeholder="+380 956 46 38 59" />
+        
+            <label class="datalist" for="user_email">Пошта</label>
+            <input class="baseword" type="email" name="email" id="user_email" placeholder="example@mail.com">
+        
+            <label class="datalist" for="user_comment">Коментар</label>
+            <textarea class="baseword" name="feedback" rows="5" id="user_comment" placeholder="Введіть текст"></textarea>
+        </form>
+
+            <label class="datalist" for="user_confirmation">Погоджуюсь з розсилкою та приймаю
+                <a href="">Умови договору</a></label>
+            <input class="baseword" type="checkbox" name="choose" value="confirmation" id="user_confirmation">
+           
+            <button type="submit" class="modal-button">Відправити</button>
     </div>
 </div>
 <script src="./js/modal.js"></script>
