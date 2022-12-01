@@ -457,23 +457,45 @@
         </svg>
     </button>
             <b class="information-title">Залиште свої дані, ми вам передзвонимо</b>
-        <form class="information">
-            <label class="datalist" for="user_name">Ім'я</label>
-            <input class="baseword" type="name" name="name" id="user_name" placeholder="Кравченко Степан"/>
+        <form class="form">
         
+            <div class="form-field">
+                <label class="datalist" for="user_name">Ім'я</label>
+                <input class="baseword" type="name" name="name" id="user_name" placeholder=" " />
+                <svg class="modalname" width="18" height="18">
+                    <use href="./images/sprite.svg#icon-person"></use>
+                </svg>
+            </div>
+            
+            <div class="form-field">
             <label class="datalist" for="user_number">Телефон</label>
-            <input class="baseword" type="tel" name="phone_number" id="user_number" placeholder="+380 956 46 38 59" />
-        
+            <input class="baseword" type="tel" name="phone_number" id="user_number" placeholder=" "/>
+            <svg class="modalnumber" width="18" height="18">
+                <use href="./images/sprite.svg#icon-phone"></use>
+            </svg>
+           </div>
+
+            
+           <div class="form-field">
             <label class="datalist" for="user_email">Пошта</label>
-            <input class="baseword" type="email" name="email" id="user_email" placeholder="example@mail.com">
-        
+            <input class="baseword" type="email" name="email" id="user_email" placeholder=" ">
+            <svg class="modalemail" width="18" height="18">
+                <use href="./images/sprite.svg#icon-emailicon"></use>
+            </svg>
+           </div>
+
+            
+        <div class="form-field">
             <label class="datalist" for="user_comment">Коментар</label>
-            <textarea class="baseword" name="feedback" rows="5" id="user_comment" placeholder="Введіть текст"></textarea>
+            <textarea class="basearea" name="feedback" rows="5" id="user_comment" placeholder="Введіть текст"></textarea>
+        </div>
+            
         </form>
 
-            <label class="datalist" for="user_confirmation">Погоджуюсь з розсилкою та приймаю
-                <a href="">Умови договору</a></label>
-            <input class="baseword" type="checkbox" name="choose" value="confirmation" id="user_confirmation">
+            <input class="baseconsent" type="checkbox" name="choose" value="confirmation" id="user_confirmation">
+            <label class="confirm" for="user_confirmation">Погоджуюсь з розсилкою та приймаю
+                <a class="agreement" href="">Умови договору</a></label>
+            <!-- <input class="baseconsent" type="checkbox" name="choose" value="confirmation" id="user_confirmation"> -->
            
             <button type="submit" class="modal-button">Відправити</button>
     </div>
