@@ -743,6 +743,7 @@ padding-bottom: 94px;
 
 }
 .socialsgroup {
+    margin-right: 93px;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -773,6 +774,68 @@ padding-bottom: 94px;
     background-color: var(--accent-color);
 
 }
+   /*----------------------Підписка на Телеграм-канал---------------------- */
+  .follow {
+    display: flex;
+    flex-direction: column;
+
+  }
+  .main-line {
+    display: flex;
+    align-items: baseline;
+  }
+  .subscribe {
+    margin-bottom: 20px;
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: calc(16/14);
+        text-transform: uppercase;
+        color: #FFFFFF;
+        
+  }
+  .subscribe-info {
+    margin-right: 12px;
+    min-width: 358px;
+    min-height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        background-color: var(--footerbg-color);
+  }
+
+  .btn-subscribe {
+    display: inline-block;
+    color: var(--button-color);
+        background-color: var(--accent-color);
+        font-weight: 700;
+        display: inline-block;
+        min-width: 200px;
+        min-height: 50px;
+        font-size: 16px;
+        line-height: calc(30/16);
+        text-align: start;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 28px;
+        padding-right: 28px;
+        border: 1px solid var(--accent-color);
+        border-radius: 2px;
+        cursor: pointer;
+
+  }
+  .btn-subscribe{
+    position: relative;
+  }
+  .subscribe-icon {
+   position: absolute;
+    position: absolute;
+        top: 55%;
+        left: 67%;
+        transform: translateY(-50%);
+        fill: var(--button-color);
+  }
 
 
 /*------------------------Сторінка Портфоліо--------------------*/
@@ -1023,7 +1086,13 @@ padding-bottom: 94px;
     border: 1px solid transparent;
     cursor: pointer;
  
-} 
+}
+
+.btn-close:hover,
+.btn-close:focus {
+    fill: var(--accent-color);
+}
+
 .form {
     display: flex;
     align-self: flex-start;
@@ -1057,10 +1126,11 @@ padding-bottom: 94px;
         letter-spacing: 0.01em;
         color: #757575;
 }
-.form-field:focus-within > .baseword {
+ .form-field:focus-within > .baseword {
+    outline: transparent;
     border: 1px solid var(--accent-color);
     border-radius: 4px;
-}
+} 
 .form-field:focus-within > .modalname {
         fill: var(--accent-color);
 }
@@ -1069,9 +1139,10 @@ padding-bottom: 94px;
 }
 .form-field:focus-within > .modalemail {
     fill: var(--accent-color);
-}
-input:focus {
-    border: 1px solid transperent;
+} 
+.form-field:focus-within > .basearea {
+    outline: transparent;
+    fill: var(--accent-color);
 }
 
 .baseword {
@@ -1081,17 +1152,18 @@ input:focus {
     padding-left: 48px;
     cursor: pointer;
 
-    border: 1px solid rgba(33, 33, 33, 0.2);
+     border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
         height: 58px;
         min-width: 448px;
 }
-.baseword:hover {
-    border: 1px solid var(--accent-color);
-    border-radius: 4px;
-}
-/* .baseword:focus + .modalname {
-    fill: var(--accent-color); */
+/* .baseword:hover,
+.baseword:focus {
+    border: 1px solid rgba(33, 150, 243, 1);
+        border-radius: 4px;
+    outline: transparent;
+} */
+
 
 .basearea {
     margin-top: 4px;
@@ -1131,7 +1203,7 @@ input:focus {
     top: 55%;
     left: 5%;
     transform: translateY(-50%);
-}
+} 
 .modalnumber {
     position: absolute;
         top: 58%;
@@ -1165,4 +1237,24 @@ input:focus {
     border: 1px solid var(--accent-color);
     border-radius: 2px;
     cursor: pointer;
+}
+.baseconsent {
+    position: relative;
+}
+.consent-icon {
+    position: absolute;
+    position: absolute;
+        top: 80.5%;
+        left: 10%;
+        transform: translateY(-50%);
+}
+.consent-icon {
+    border: 1px solid #212121;;
+    fill: var(--button-color);
+
+}
+.consent-icon:hover,
+.consent-icon:focus {
+    border: transparent;
+    fill: var(--accent-color);
 }

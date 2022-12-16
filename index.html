@@ -440,10 +440,21 @@
 </ul>
         </div>
 
+             <div class="follow">
+              <label class="subscribe" for="subscribe_email">Підпишіться на розсилку</label>
+              <div class="main-line">
+                <input class="subscribe-info" type="email" name="email" id="subscribe_email" placeholder="E-mail">
+                <button class="btn-subscribe" type="button">Підписатися
+                    <svg class="subscribe-icon" width="24" height="24">
+                       <use href="./images/sprite.svg#icon-iconsend"></use>
+                    </svg>
+                </button> 
+              </div>
+              
+             </div>
+
 
     </div>
-
-
 </footer>
 
 <!----------------------------Modal window-------------------------->
@@ -493,9 +504,12 @@
         </form>
 
             <input class="baseconsent" type="checkbox" name="choose" value="confirmation" id="user_confirmation">
+            <svg class="consent-icon" width="16" height="15">
+                <use href="./images/sprite.svg#icon-iconcheck"></use>
+            </svg>
             <label class="confirm" for="user_confirmation">Погоджуюсь з розсилкою та приймаю
                 <a class="agreement" href="">Умови договору</a></label>
-            <!-- <input class="baseconsent" type="checkbox" name="choose" value="confirmation" id="user_confirmation"> -->
+            
            
             <button type="submit" class="modal-button">Відправити</button>
     </div>
