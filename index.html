@@ -502,16 +502,19 @@
         </div>
             
         </form>
-
-            <input class="baseconsent" type="checkbox" name="choose" value="confirmation" id="user_confirmation">
-            <svg class="consent-icon" width="16" height="15">
-                <use href="./images/sprite.svg#icon-iconcheck"></use>
-            </svg>
-            <label class="confirm" for="user_confirmation">Погоджуюсь з розсилкою та приймаю
-                <a class="agreement" href="">Умови договору</a></label>
-            
-           
-            <button type="submit" class="modal-button">Відправити</button>
+             <label class="confirm">
+            <div class="container-confirm">
+                <input class="baseconsent" type="checkbox" name="choose" value="confirmation">
+                 <svg class="consent-icon" width="16" height="16">
+                    <use href="./images/sprite.svg#icon-iconcheckbox"></use>
+                </svg>
+                <p class="contract">
+                    Погоджуюсь з розсилкою та приймаю
+                    <a class="agreement" href="">Умови договору</a>
+                </p>
+            </div>
+                <button type="submit" class="modal-button">Відправити</button>
+            </label>    
     </div>
 </div>
 <script src="./js/modal.js"></script>
