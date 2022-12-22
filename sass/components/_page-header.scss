@@ -1,0 +1,151 @@
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+.section-header {
+    border-bottom: 1px solid #f1f1f1;
+
+}
+
+
+.list {
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+}
+
+.first-nav {
+    display: flex;
+    align-items: center;
+
+}
+
+.first-nav .logo {
+    margin-right: 93px;
+}
+
+.site-nav,
+.info-about {
+    display: flex;
+}
+.site-nav .site-nav__link,
+.info-about .info-about__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.site-nav__main-nav {
+    margin-right: 50px;
+}
+
+.info-about__main-nav:not(:last-child) {
+    margin-right: 50px;
+}
+
+.info-about {
+    margin-left: auto;
+    margin-right: 0px;
+}
+
+.info-about .menu-select {
+    margin-right: 30px;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+}
+.site-nav .site-nav__link,
+.info-about .info-about__link {
+    color: var(--primary-text-color);
+    font-family: 'Roboto' sans-serif;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    text-decoration: none;
+    text-transform: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.02em;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.info-about .info-about__link {
+    color: var(--ptext-color);
+    display: flex;
+    align-items: center;
+}
+.site-nav__link--bluelink:hover,
+.site-nav__link--bluelink:focus {
+    color: var(--accent-color);
+}
+
+.info-about__link--bluelink:hover,
+.info-about__link--bluelink:focus {
+    color: var(--accent-color);
+}
+
+/* .site-nav .active {
+    color: var(--accent-color);
+    background-color: var(--button-color);
+} */
+.info-about__main-nav {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: nowrap;
+}
+.info-about__info-icon,
+.info-about__info-header {
+    display: inline-block;
+    fill: currentColor;
+    /* margin-right: 10px; */
+
+
+}
+
+.info-about__info-header {
+    margin-right: 10px;
+}
+
+.info-about__info-icon {
+    margin-right: 10px;
+}
+
+.site-nav .active {
+    position: relative;
+}
+
+.site-nav .active {
+    color: var(--accent-color);
+    background-color: var(--button-color);
+}
+.site-nav .active::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+
+    transform: translateX(-50%) scaleX(0.3);
+    display: block;
+    width: 95%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+    opacity: 0;
+}
+
+.site-nav .active::after {
+    transform: translateX(-50%) scaleX(1);
+    opacity: 1;
+}
