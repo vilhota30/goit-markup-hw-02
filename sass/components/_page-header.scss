@@ -86,14 +86,19 @@
     display: flex;
     align-items: center;
 }
-.site-nav__link--bluelink:hover,
-.site-nav__link--bluelink:focus {
+.site-nav__link--bluelink {
+    &:hover,
+    &:focus {
     color: var(--accent-color);
+    }
+   
 }
 
-.info-about__link--bluelink:hover,
-.info-about__link--bluelink:focus {
-    color: var(--accent-color);
+.info-about__link--bluelink {
+    &:hover,
+    &:focus {
+     color: var(--accent-color);
+    }
 }
 
 /* .site-nav .active {

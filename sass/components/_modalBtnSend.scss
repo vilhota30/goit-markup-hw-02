@@ -1,0 +1,22 @@
+.buttonpage {
+    color: var(--button-color);
+    background-color: var(--accent-color);
+    font-weight: 700;
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    line-height: calc(30/16);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid var(--accent-color);
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.backdrop__buttonpage {
+    @extend .buttonpage;
+    margin-left: 124px;
+    min-width: 200px;
+    padding-left: 52px;
+    padding-right: 52px;
+}

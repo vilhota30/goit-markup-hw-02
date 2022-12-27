@@ -9,16 +9,14 @@
     text-decoration: none;
 }
 
- .section-number__logo {
-     margin-bottom: 20px;
- }
+.section-number__logo {
+    margin-bottom: 20px;
+}
 
+.section-number__logo-header {
+    color: var(--button-color);
+}
 .section-header__logo-header {
     color: var(--logofirst-color);
     font-weight: 700;
 }
-
- .section-number__logo-header {
-    color: var(--button-color);
- }
- 

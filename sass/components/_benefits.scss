@@ -1,4 +1,4 @@
-.container {
+.container-benefits {
     margin-left: auto;
     margin-right: auto;
     width: 1200px;
@@ -34,7 +34,7 @@
     content-visibility: hidden;
 }
 
-.container .benefits-line {
+.container-benefits .benefits-line {
     display: flex;
     align-self: flex-end;
     list-style: none;
