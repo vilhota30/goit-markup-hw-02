@@ -29,11 +29,12 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.socials__socials-link--link:hover,
-.socials__social-link--link:focus {
-    color: var(--button-color);
-    background-color: var(--accent-color);
-
+.socials__socials-link--link {
+    &:hover,
+    &:focus {
+        color: var(--button-color);
+        background-color: var(--accent-color);
+    }
 }
 .socials__socials-icon {
     fill: currentColor;
