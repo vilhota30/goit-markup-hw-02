@@ -12,7 +12,11 @@
 
 }
 .socials__socials-link {
-    display: flex;
+
+
+    @include transitive (color, background-color);
+    
+     display: flex;
     justify-content: center;
     align-items: center;
     width: 44px;
@@ -24,9 +28,9 @@
     outline: 2px solid transparent;
     outline-offset: -2px;
 
-    transition-property: color, background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    // transition-property: color, background-color;
+    // transition-duration: 250ms;
+    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socials__socials-link--link {

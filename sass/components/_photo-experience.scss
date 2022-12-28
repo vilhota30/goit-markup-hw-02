@@ -10,10 +10,12 @@
 
  }
  .experience__post-example {
+
+    @include transitive (box-shadow);
      display: block;
-     transition-property: box-shadow;
-     transition-duration: 250ms;
-     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    //  transition-property: box-shadow;
+    //  transition-duration: 250ms;
+    //  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
  }
 
  .experience__post-example--shadow {
@@ -75,6 +77,8 @@
  }
 
  .secondoverlay {
+
+    @include transitive (color, transform);
      position: absolute;
      top: 0;
      left: 0;
@@ -87,9 +91,9 @@
      background: rgba(33, 150, 243, 0.9);
      backdrop-filter: blur(3px);
 
-     transition-property: color, transform;
-     transition-duration: 250ms;
-     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    //  transition-property: color, transform;
+    //  transition-duration: 250ms;
+    //  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
  }
  .experience__icon-title {

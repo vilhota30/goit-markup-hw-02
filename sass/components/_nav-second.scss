@@ -14,14 +14,16 @@
 }
 
 .nav-second {
+
+    @include transitive (color, border);
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
     color: var(--logofirst-color);
 
-    transition-property: color, border;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    // transition-property: color, border;
+    // transition-duration: 250ms;
+    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .nav-second .nav-second__menu--blue {
@@ -34,6 +36,8 @@
     }
 }
 .nav-second__menu {
+
+    @include transitive (color, background-color, box-shadow);
     border: transparent;
     cursor: pointer;
     margin-right: 8px;
@@ -50,9 +54,9 @@
     text-align: center;
     letter-spacing: 0.03em;
 
-    transition-property: color, background-color, box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    // transition-property: color, background-color, box-shadow;
+    // transition-duration: 250ms;
+    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-second__button-type .first {
     min-width: 73px;

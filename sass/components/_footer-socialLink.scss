@@ -1,5 +1,7 @@
 
 .footer-info__element {
+
+   @include transitive (color);
    font-family: 'Roboto';
    color: rgba(255, 255, 255, 0.6);
    font-style: normal;
@@ -9,8 +11,8 @@
    letter-spacing: 0.03em;
    text-decoration: none;
 
-   transition-property: color;
-   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   // transition-property: color;
+   // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
  }
 
  .footer-info__element--white {
@@ -64,6 +66,8 @@
  }
 
 .socialsgroup__connect-link {
+
+   @include transitive (color, background-color);
    display: flex;
    justify-content: center;
    align-items: center;
@@ -75,9 +79,9 @@
 
    outline: 2px solid transparent;
    outline-offset: -2px;
-   transition-property: color, background-color;
-   transition-duration: 250ms;
-   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   // transition-property: color, background-color;
+   // transition-duration: 250ms;
+   // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
  }
 

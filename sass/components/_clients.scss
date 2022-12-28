@@ -36,6 +36,8 @@
 }
 
 .regularclients-list__clients-link {
+
+    @include transitive (fill, border, border-radius);
     fill: #afb1b8;
     display: flex;
     align-items: center;
@@ -45,9 +47,9 @@
     border: 1px solid #afb1b8;
     border-radius: 4px;
 
-    transition-property: fill, border, border-radius;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    // transition-property: fill, border, border-radius;
+    // transition-duration: 250ms;
+    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .regularclients-list__client-icon {
