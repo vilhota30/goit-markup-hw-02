@@ -14,9 +14,11 @@
     border-radius: 50%;
     border: 1px solid transparent;
     cursor: pointer;
-    transition-property: fill, outline;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @include transitive (fill,outline);
+    // transition-property: fill, outline;
+    // transition-duration: 250ms;
+    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-close--blue {

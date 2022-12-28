@@ -118,8 +118,13 @@
           align-items: center;
 }
 
-.site-nav .site-nav__link,
-.info-about .info-about__link {
+.site-nav .site-nav__link {
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--primary-text-color);
   font-family: "Roboto" sans-serif;
   display: block;
@@ -133,12 +138,28 @@
   font-size: 14px;
   line-height: 1.1428571429;
   letter-spacing: 0.02em;
+}
+
+.info-about .info-about__link {
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--primary-text-color);
+  font-family: "Roboto" sans-serif;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  text-decoration: none;
+  text-transform: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1428571429;
+  letter-spacing: 0.02em;
 }
 
 .info-about .info-about__link {
@@ -545,6 +566,12 @@
 }
 
 .socials__socials-link {
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -561,12 +588,6 @@
   background-color: var(--button-color);
   outline: 2px solid transparent;
   outline-offset: -2px;
-  -webkit-transition-property: color, background-color;
-  transition-property: color, background-color;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socials__socials-link--link:hover, .socials__socials-link--link:focus {
@@ -659,6 +680,12 @@
 }
 
 .regularclients-list__clients-link {
+  -webkit-transition-property: fill, border, border-radius;
+  transition-property: fill, border, border-radius;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   fill: #afb1b8;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -673,12 +700,6 @@
   min-width: 170px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  -webkit-transition-property: fill, border, border-radius;
-  transition-property: fill, border, border-radius;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .regularclients-list__client-icon {
@@ -758,6 +779,12 @@
 }
 
 .footer-info__element {
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   font-family: "Roboto";
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
@@ -766,10 +793,6 @@
   line-height: 1.7142857143;
   letter-spacing: 0.03em;
   text-decoration: none;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-info__element--white:hover, .footer-info__element--white:focus {
@@ -789,6 +812,12 @@
 }
 
 .footer-info__element {
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   font-family: "Roboto";
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
@@ -797,10 +826,6 @@
   line-height: 1.7142857143;
   letter-spacing: 0.03em;
   text-decoration: none;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-info__element--white:hover, .footer-info__element--white:focus {
@@ -859,6 +884,12 @@
 }
 
 .socialsgroup__connect-link {
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -875,12 +906,6 @@
   background-color: #3b3c49;
   outline: 2px solid transparent;
   outline-offset: -2px;
-  -webkit-transition-property: color, background-color;
-  transition-property: color, background-color;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socialsgroup__connect-link--blue:hover, .socialsgroup__connect-link--blue:focus {
@@ -919,6 +944,12 @@
 }
 
 .section-number__subscribe-info {
+  -webkit-transition-property: outline, border;
+  transition-property: outline, border;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   margin-right: 12px;
   padding: 15px 16px;
   min-width: 358px;
@@ -928,12 +959,6 @@
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: var(--footerbg-color);
-  -webkit-transition-property: outline, border;
-  transition-property: outline, border;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-line:focus-within > .section-number__subscribe-info--blueborder {
@@ -1090,6 +1115,12 @@
     outline: transparent;
 } */
 .backdrop__baseword {
+  -webkit-transition-property: outline, border;
+  transition-property: outline, border;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   margin-top: 4px;
   margin-bottom: 10px;
   padding: 10px 20px;
@@ -1099,15 +1130,15 @@
   border-radius: 4px;
   height: 58px;
   min-width: 448px;
+}
+
+.backdrop__basearea {
   -webkit-transition-property: outline, border;
   transition-property: outline, border;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.backdrop__basearea {
   margin-top: 4px;
   margin-bottom: 20px;
   padding: 12px 16px;
@@ -1115,12 +1146,6 @@
   border-radius: 4px;
   height: 120px;
   min-width: 448px;
-  -webkit-transition-property: outline, border;
-  transition-property: outline, border;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop__agreement {
@@ -1195,6 +1220,12 @@
 }
 
 .backdrop__consent-icon {
+  -webkit-transition-property: fill, border, background-color;
+  transition-property: fill, border, background-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   position: absolute;
   top: 81%;
   left: 11%;
@@ -1202,12 +1233,6 @@
           transform: translateY(-50%);
   border: 1px solid #212121;
   fill: var(--button-color);
-  -webkit-transition-property: fill, border, background-color;
-  transition-property: fill, border, background-color;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop__baseconsent:checked + .backdrop__consent-icon--check {
