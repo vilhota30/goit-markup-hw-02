@@ -44,7 +44,7 @@
     fill: currentColor;
 }
 .employee__team-border {
-    margin-right: 30px;
+    // margin-right: 30px;
     background-color: var(--button-color);
     border-bottom: 2px solid #afb8b1;
     border-radius: 4px;
@@ -62,12 +62,9 @@
     letter-spacing: 0.03em;
 
 }
-.employee__photo-team {
-    margin-bottom: 30px;
-}
 
 .employee__group-center {
-    text-align: center;
+    text-align: center;   
 }
 
 .employee__work {
