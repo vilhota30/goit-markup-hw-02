@@ -64,6 +64,28 @@
   margin-right: 93px;
 }
 
+.btnmenutel {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: transperant;
+}
+
+.btnmenutel .icon-menucross {
+  display: none;
+}
+
+.btnmenutel is-open .icon-menucross {
+  display: block;
+}
+
+.btnmenutel is-open .menutel {
+  display: none;
+}
+
 .site-nav,
 .info-about {
   display: -webkit-box;

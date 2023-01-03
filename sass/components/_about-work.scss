@@ -1,15 +1,22 @@
 .container-project {
-    margin-left: auto;
-    margin-right: auto;
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
+    @extend .container 
 
 }
 
 .section-title {
-
     padding-bottom: 94px;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+     @media screen and (min-width: 1140px) {
+        display: flex;
+        flex-direction: row;
+     }
 }
 
 .section-title__section-titlework {
