@@ -19,30 +19,49 @@
 }
 
 .first-nav {
-    display: flex;
-    align-items: center;
-
+     display: flex;
+     align-items: center;
+    position: relative;
 }
+
 
 .first-nav .logo {
     margin-right: 93px;
 }
 
-.btnmenutel {
+.menu-button {
  display: inline-flex;
  margin: 0;
  padding: 0;
  border: 0;
  background-color: transperant;
 }
-.btnmenutel .icon-menucross {
+.menu-button .icon-cross {
     display: none;
 }
-.btnmenutel is-open .icon-menucross {
- display: block;
+.menu-button.is-open .icon-cross {
+    display: block;
 }
-.btnmenutel is-open .menutel {
+.menu-button.is-open .icon-menu {
     display: none;
+}
+.menu-container {
+    display: none;
+
+    position:absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 400px;
+
+    background-color: var(--accent-color);
+    padding: 20px;
+    text-align: center;
+    font-size: 34px;
+
+    &.is-open {
+      display: block;
+    }
 }
 
 .site-nav,
