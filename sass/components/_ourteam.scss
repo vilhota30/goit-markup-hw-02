@@ -1,15 +1,13 @@
 .container-ourteam {
-    @extend .container 
-
+    @extend .container;
 }
 
 .ourteam-section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    @extend %section;
     background-color: #F5F4FA;
 }
 .employee {
-    display: flex;
+    // display: block;
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
@@ -18,14 +16,18 @@
 }
 
 .employee__team-border {
+    display: block;
     background-color: #F5F4FA;
-    
+    @media screen and (max-width: 479px) {
+        margin-botton: 30px;
+    }
     @media screen and (min-width: 768px) {
         align-content: center;
         width: calc((100% - 4 * 15px) / 2);
         margin: 15px;
+        margin-bottom: 15px;
     }
-    @media screen and (min-width: 1140px) {
+    @media screen and (min-width: 1200px) {
         width: 270px;
         height: 428px;
         .employee__team-border:not(:last-child) {
@@ -37,6 +39,10 @@
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
+
+    @media screen and (min-width: 480px) {
+        align-content: center;
+    }
 
     @media screen and (min-width: 768px) {
         align-self: center;

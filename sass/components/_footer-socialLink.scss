@@ -43,7 +43,17 @@
    display: inline-block;
    align-items: flex-start;
    flex-direction: column;
+   margin-bottom: 60px;
+
+   @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: flex-start;
+   }
+   @media screen and (min-width: 1200px) {
+      margin-right: 94px;
+   }
  }
+
 
  .section-number__jointoday-title {
     margin-bottom: 20px;
@@ -55,10 +65,18 @@
     line-height: calc(16/14);
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    @media screen and (min-width: 768px) {
+      align-self: center;
+    }
+    @media screen and (min-width: 1200px) {
+      align-self: flex-start;
+    }
  }
 
  .socialsgroup {
-   margin-right: 93px;
+   @media screen and (max-width: 480px) {
+      margin-right: 93px;
+   }
    display: flex;
    justify-content: center;
     text-align: center;
