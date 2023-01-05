@@ -41,6 +41,10 @@
     align-items: center;
     //  padding-top: 16px;
     //  padding-bottom: 52px;
+    @media screen and (max-width: 479px) {
+       display: block;
+    }
+
     @media screen and (min-width: 480px) {
            width: calc((100% - 4 * 15px) / 2);
             margin: 15px;
@@ -52,7 +56,7 @@
     }
 
 
-    @media screen and (min-width: 1140px) {
+    @media screen and (min-width: 1200px) {
         width: 170px;
         height: 92px;
 
