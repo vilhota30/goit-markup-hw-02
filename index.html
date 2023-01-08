@@ -22,31 +22,7 @@
         <nav class="first-nav">
         <a href=" " class="logo">Web<span class="logo-header section-header__logo-header">Studio</span></a>
         <!-------------------Навігація------------------------->
-        <ul class="site-nav list">
-            <li class="site-nav__main-nav"><a href="/index.html " class="site-nav__link site-nav__link--bluelink active">Студія</a></li>
-            <li class="site-nav__main-nav"><a href="./portfolio.html" class="site-nav__link site-nav__link--bluelink">Портфоліо</a></li>
-            <li class="site-nav__main-nav"><a href="   " class="site-nav__link site-nav__link--bluelink">Контакти</a></li>
-        </ul>
-        <ul class="info-about list">
-            <div class="menu-select">
-              <li class="info-about__main-nav"><a href="mailto:info@devstudio" class="info-about__link info-about__link--bluelink">
-             <svg class="info-about__info-header" width="16" height="12">
-            <use href="./images/sprite.svg#icon-envelope-ws"></use>
-             </svg>
-             info@devstudio</a>
-              </li>
-             </div>
-
-            <div class="menusecond-select">
-              <li class="info-about__main-nav"><a href="tel:+380961111111" class="info-about__link info-about__link--bluelink">
-            <svg class="info-about__info-icon" width="10" height="16">
-            <use href="./images/sprite.svg#icon-smartphone-ws"></use>
-             </svg>
-              +38 096 111 11 11</a>
-             </li>
-
-            </div>
-        </ul>
+    
         <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
             <svg width="40" height="40" aria-label="Перемикач мобільного меню">
                 <use class="icon-menu" href="./iconsubscribe.svg#icon-btnmenutel"></use>
@@ -54,14 +30,50 @@
             </svg>
         </button>
         <div class="menu-container" id="menu-container" data-menu>
-            Контент-меню
+
+            <div class="navigation">
+                <ul class="site-nav list">
+                    <li class="site-nav__main-nav"><a href="/index.html "
+                            class="site-nav__link site-nav__link--bluelink active">Студія</a></li>
+                    <li class="site-nav__main-nav"><a href="./portfolio.html"
+                            class="site-nav__link site-nav__link--bluelink">Портфоліо</a></li>
+                    <li class="site-nav__main-nav"><a href="   " class="site-nav__link site-nav__link--bluelink">Контакти</a></li>
+                </ul>
+            </div>
+            
+            <div class="contacts">
+                <ul class="info-about list">
+                    <div class="menu-select">
+                        <li class="info-about__main-nav"><a href="mailto:info@devstudio"
+                                class="info-about__link info-about__link--bluelink">
+                                <svg class="info-about__info-header" width="16" height="12">
+                                    <use href="./images/sprite.svg#icon-envelope-ws"></use>
+                                </svg>
+                                info@devstudio</a>
+                        </li>
+                    </div>
+                
+                    <div class="menusecond-select">
+                        <li class="info-about__main-nav"><a href="tel:+380961111111"
+                                class="info-about__link info-about__link--bluelink">
+                                <svg class="info-about__info-icon" width="10" height="16">
+                                    <use href="./images/sprite.svg#icon-smartphone-ws"></use>
+                                </svg>
+                                +38 096 111 11 11</a>
+                        </li>
+                
+                    </div>
+                </ul>
+            </div>
+
+           
         </div>
 
     </nav>  
  </div>
+
+
  
-
-
 </header> 
 <!---------------------Герой------------------------>
 <main> 
@@ -458,6 +470,7 @@
             <div class="follow">
                 <label class="section-number__subscribe" for="subscribe_email">Підпишіться на розсилку</label>
                 <div class="main-line">
+                    <!-- <label class="section-number__subscribe" for="subscribe_email">Підпишіться на розсилку</label> -->
                     <input class="section-number__subscribe-info section-number__subscribe-info--blueborder" type="email"
                         name="email" id="subscribe_email" placeholder="E-mail">
                     <button class="btn-subscribe" type="button">Підписатися
@@ -470,90 +483,6 @@
             </div>
 
         </div>
-
-
-
-
-
-
-      <!-- <div class="container-baseline">
-        <div class="first-column">
-            <a href=" " class="logo section-number__logo">Web<span
-                    class="logo-header section-number__logo-header">Studio</span></a>
-        
-            <ul class="footer-info list">
-                <li class="footer-info__contacts">
-                    <a href="https://goo.gl/maps/D6A7sHCN8AQHzFbF9" class="footer-info__element footer-info__element--white">м.
-                        Київ, пр-т Лесі Українки, 26</a>
-                </li>
-                <li class="footer-info__contacts">
-                    <a href="mailto:info@devstudio.com"
-                        class="footer-info__element footer-info__element--white">info@devstudio.com</a>
-                </li>
-                <li class="footer-info__contacts">
-                    <a href="tel:+380961111111" class="footer-info__element footer-info__element--white">+38 096 111 11 11</a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="jointoday">
-            <h2 class="section-number__jointoday-title">Приєднуйтесь</h2>
-            <ul class="socialsgroup list ">
-                <li class="socialsgroup__social-number">
-                    <a class="socialsgroup__connect-link socialsgroup__connect-link--blue" href="https://instagram.com"
-                        target="_blank" rel="noopener noreferrer" aria-label="Instagram icon">
-        
-                        <svg class="socialsgroup__socials-icon" width="20" height="20">
-                            <use href="./images/sprite.svg#icon-instagram"></use>
-                        </svg>
-                    </a>
-                </li>
-        
-                <li class="socialsgroup__social-number">
-                    <a class="socialsgroup__connect-link socialsgroup__connect-link--blue" href="https://twitter.com"
-                        target="_blank" rel="noopener noreferrer" aria-label="twitter icon">
-                        <svg class="socialsgroup__socials-icon" width="20" height="20">
-                            <use href="./images/sprite.svg#icon-twitter"></use>
-                        </svg>
-                    </a>
-                <li class="socialsgroup__social-number">
-                    <a class="socialsgroup__connect-link socialsgroup__connect-link--blue" href="https://facebook.com" target="_blank"
-                        rel="noopener noreferrer" aria-label="facebook icon">
-                        <svg class="socialsgroup__socials-icon" width="20" height="20">
-                            <use href="./images/sprite.svg#icon-facebook"></use>
-                        </svg>
-                    </a>
-                
-                <li class="socialsgroup__social-number">
-                    <a class="socialsgroup__connect-link socialsgroup__connect-link--blue" href="https://linkedIn.com" target="_blank"
-                        rel="noopener noreferrer" aria-label="linkedIn icon">
-                        <svg class="socialsgroup__socials-icon" width="20" height="20">
-                            <use href="./images/sprite.svg#icon-linkedin"></use>
-                        </svg>
-                    </a>
-                
-                </li>
-            </ul>
-        </div>
-
-    </div>
-
-        <div class="follow">
-              <label class="section-number__subscribe" for="subscribe_email">Підпишіться на розсилку</label>
-              <div class="main-line">
-                <input class="section-number__subscribe-info section-number__subscribe-info--blueborder" type="email" name="email" id="subscribe_email" placeholder="E-mail">
-                <button class="btn-subscribe" type="button">Підписатися
-                    <svg class="section-number__subscribe-icon" width="24" height="24">
-                       <use href="./images/sprite.svg#icon-iconsend"></use>
-                    </svg>
-                </button> 
-              </div>
-              
-        </div> -->
-
-
-
-
 
 </div>
 </footer>
