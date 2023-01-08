@@ -13,7 +13,7 @@
     }
     @media screen and (min-width: 1200px) {
         display: flex;
-        margin-left: 200px;
+        // margin-left: 200px;
         margin-right: 70px;
     }
 }
@@ -44,14 +44,15 @@
 
 .footer-info {
     @media screen and (min-width: 1200px) {
-    display: flex;
-    flex-direction: column;
-    text-align: start;
+        display: inline-block;
+    // flex-direction: column;
+
     }
     background-color: var(--footerbg-color);
 }
 
 .footer-info__contacts {
+    display: block;
     margin-bottom: 9px;
 }
 
