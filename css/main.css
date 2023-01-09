@@ -149,11 +149,13 @@ body.modal-open {
 @media screen and (max-width: 767px) {
   .menu-container {
     display: none;
+    text-align: start;
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
-    height: 400px;
+    min-width: 480;
+    height: 796px;
   }
   .menu-container.is-open {
     display: block;
@@ -168,22 +170,35 @@ body.modal-open {
 }
 
 @media screen and (max-width: 767px) {
-  .site-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  .navigation {
+    margin-bottom: 302px;
   }
 }
 
-.site-nav,
+@media screen and (max-width: 1200px) {
+  .contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .site-nav,
 .info-about {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) {
+  .site-nav,
+.info-about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .site-nav .site-nav__link,
@@ -210,6 +225,20 @@ body.modal-open {
 .info-about {
   margin-left: auto;
   margin-right: 0px;
+}
+@media screen and (max-width: 767px) {
+  .info-about {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    margin-left: 0px;
+    margin-bottom: 64px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .info-about {
+    display: block;
+  }
 }
 
 .info-about .menu-select {
@@ -251,6 +280,10 @@ body.modal-open {
     padding-top: 0px;
     padding-bottom: 0px;
     margin-bottom: 32px;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.175;
+    color: var(--primary-text-color);
   }
 }
 
@@ -275,6 +308,20 @@ body.modal-open {
   line-height: 1.1428571429;
   letter-spacing: 0.02em;
 }
+@media screen and (max-width: 767px) {
+  .info-about .info-about__link {
+    padding-top: 0px;
+    font-size: 24px;
+    line-height: 1.1666666667;
+    color: var(--ptext-color);
+  }
+}
+@media screen and (min-width: 768px) {
+  .info-about .info-about__link {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
 
 .info-about .info-about__link {
   color: var(--ptext-color);
@@ -286,12 +333,18 @@ body.modal-open {
           align-items: center;
 }
 
-.site-nav__link--bluelink:hover, .site-nav__link--bluelink:focus {
+.site-nav__link--bluelink:hover, .site-nav__link--bluelink:focus,
+.info-about__link--bluelink:hover,
+.info-about__link--bluelink:focus,
+.info-about__link--telcolor:hover,
+.info-about__link--telcolor:focus {
   color: var(--accent-color);
 }
 
-.info-about__link--bluelink:hover, .info-about__link--bluelink:focus {
-  color: var(--accent-color);
+@media screen and (max-width: 767px) {
+  .info-about__link--telcolor {
+    color: var(--accent-color);
+  }
 }
 
 /* .site-nav .active {
@@ -308,12 +361,23 @@ body.modal-open {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
 }
+@media screen and (max-width: 1200px) {
+  .info-about__main-nav:not(last-child) {
+    margin-bottom: 10px;
+  }
+}
 
 .info-about__info-icon,
 .info-about__info-header {
   display: inline-block;
   fill: currentColor;
   /* margin-right: 10px; */
+}
+@media screen and (max-width: 767px) {
+  .info-about__info-icon,
+.info-about__info-header {
+    display: none;
+  }
 }
 
 .info-about__info-header {
@@ -324,8 +388,10 @@ body.modal-open {
   margin-right: 10px;
 }
 
-.site-nav .active {
-  position: relative;
+@media screen and (min-width: 768px) {
+  .site-nav .active {
+    position: relative;
+  }
 }
 
 .site-nav .active {
@@ -352,6 +418,28 @@ body.modal-open {
   -webkit-transform: translateX(-50%) scaleX(1);
           transform: translateX(-50%) scaleX(1);
   opacity: 1;
+}
+
+.menu-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2222222222;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+@media screen and (min-width: 767px) {
+  .menu-link {
+    display: none;
+  }
+}
+
+.menu-link__item:not(last-child) {
+  margin-right: 20px;
 }
 
 .container-hero {
