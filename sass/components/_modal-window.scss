@@ -35,7 +35,7 @@
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    width: 450px;
+    min-width: 450px;
     min-height: 609px;
     background-color: var(--button-color);
     border-radius: 10px;
@@ -45,10 +45,12 @@
             top: 50%;
             left: 50%;
             transform: translateX(-50%) translateY(-50%);
-            max-width: 528px;
-            width: 100%;
-            min-height: 581px;
         }
+    @media screen and (min-width: 1200px) {
+
+        width: 528px;
+        height: 581px;
+    }
 }
 
 .backdrop .is-hidden .modal {
@@ -114,6 +116,9 @@
     line-height: calc(14/12);
     letter-spacing: 0.01em;
     color: #757575;
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
 }
 
 .form-field:focus-within>.backdrop__baseword--blue {
@@ -155,7 +160,16 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     height: 58px;
-    min-width: 448px;
+    min-width: 370px;
+    @media screen and (min-width: 1200px) {
+        width: 448px;
+        height: 58px;
+    }
+    @media screen and (min-width: 768px) {
+        min-width: 370px;
+        height: 58px;
+    }
+
     // transition-property: outline, border;
     // transition-duration: 250ms;
     // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -169,7 +183,11 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     height: 120px;
-    min-width: 448px;
+    min-width: 370px;
+    @media screen and (min-width: 1200px) {
+        width: 448px;
+        height: 58px;
+    }
 
     // transition-property: outline, border;
     // transition-duration: 250ms;
@@ -191,6 +209,12 @@
     line-height: calc(24/14);
     letter-spacing: 0.03em;
     color: #757575;
+    @media screen and (max-width: 767px) {
+        display: block;
+    }
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
 }
 
 .form-field {
@@ -228,8 +252,15 @@
     position: relative;
     appearance: none;
     margin-left: 14px;
+    @media screen and (max-width: 767px) {
+        margin-left: 18px;
+    }
+    @media screen and (min-width: 768px) {
+        margin-left: 18px;
+    }
 
 }
+ 
 
 .backdrop__consent-icon {
 
@@ -240,6 +271,18 @@
     transform: translateY(-50%);
     border: 1px solid #212121;
     fill: var(--button-color);
+    @media screen and (max-width: 767px) {
+        top: 79%;
+        left: 9%;
+    }
+    @media screen and (min-width: 768px) {
+        top: 79%;
+        left: 9%;
+    }
+    @media screen and (min-width: 1200px) {
+        top: 76.5%;
+        left: 11%;
+    }
     // transition-property: fill, border, background-color;
     // transition-duration: 250ms;
     // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

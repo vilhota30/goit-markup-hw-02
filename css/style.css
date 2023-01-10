@@ -1243,6 +1243,12 @@ padding-bottom: 94px;
         left: 5%;
         transform: translateY(-50%);
 }
+/* .backdrop__buttonpage {
+    display: inline-block;
+    text-align: center; 
+    min-width: 200px;
+   
+} */
 
 .buttonpage {
     color: var(--button-color);
@@ -1258,12 +1264,7 @@ padding-bottom: 94px;
     border-radius: 2px;
     cursor: pointer;
 }
-.backdrop__buttonpage {
-    margin-left: 124px;
-    min-width: 200px;
-    padding-left: 52px;
-    padding-right: 52px;
-}
+
 .container-confirm {
     display:flex;
     justify-content: center;
