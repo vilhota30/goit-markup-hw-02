@@ -33,13 +33,17 @@
         display: flex;
         align-items: flex-start;
     }
+    @media screen and (min-width: 1200px) {
+        margin-right: 94px;
+        justify-content: baseline;
+    }
 }
 .second-baseline {
     @media screen and (min-width: 1200px) {
         display: flex;
         align-content: center;
         justify-content: baseline;
-        
+        align-items: flex-start;
 
     }
 }
