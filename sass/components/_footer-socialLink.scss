@@ -43,15 +43,15 @@
    display: inline-block;
    align-items: flex-start;
    flex-direction: column;
-   margin-bottom: 60px;
-
+   @media screen and (max-width: 1199px) {
+      margin-bottom: 60px;
+   }
+  
    @media screen and (min-width: 768px) {
       display: flex;
       align-items: flex-start;
    }
-   @media screen and (min-width: 1200px) {
-      margin-right: 94px;
-   }
+
  }
 
 

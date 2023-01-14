@@ -1,7 +1,6 @@
 .first-column {
     display: flex;
     flex-direction: column;
-    margin-bottom: 60px;
     @media screen and (max-width: 480px) {
         align-items: flex-start;
         margin-right: 70px;
@@ -10,11 +9,19 @@
         display: flex;
         align-items: flex-start;
         margin-right: 165px;
+        margin-bottom: 60px;
+    }
+    @media screen and (max-width: 1199px) {
+        display: flex;
+        align-items: flex-start;
+        margin-right: 165px;
+        margin-bottom: 60px;
     }
     @media screen and (min-width: 1200px) {
         display: flex;
         // margin-left: 200px;
         margin-right: 70px;
+        margin-bottom: 0;
     }
 }
 
