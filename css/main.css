@@ -1194,9 +1194,9 @@ img {
 @media screen and (min-width: 1200px) {
   .container-baseline {
     margin-right: 94px;
-    -webkit-box-pack: baseline;
-        -ms-flex-pack: baseline;
-            justify-content: baseline;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 
@@ -1207,12 +1207,9 @@ img {
     display: flex;
     -ms-flex-line-pack: center;
         align-content: center;
-    -webkit-box-pack: baseline;
-        -ms-flex-pack: baseline;
-            justify-content: baseline;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 
@@ -1722,25 +1719,25 @@ img {
   }
 }
 
-.form-field:focus-within > .backdrop__baseword--blue {
+.basegroup:focus-within > .backdrop__baseword--blue {
   outline: transparent;
   border: 1px solid var(--accent-color);
   border-radius: 4px;
 }
 
-.form-field:focus-within > .backdrop__modalname--blue {
+.basegroup:focus-within > .backdrop__modalname--blue {
   fill: var(--accent-color);
 }
 
-.form-field:focus-within > .backdrop__modalnumber--blue {
+.basegroup:focus-within > .backdrop__modalnumber--blue {
   fill: var(--accent-color);
 }
 
-.form-field:focus-within > .backdrop__modalemail--blue {
+.basegroup:focus-within > .backdrop__modalemail--blue {
   fill: var(--accent-color);
 }
 
-.form-field:focus-within > .backdrop__basearea--blue {
+.basegroup:focus-within > .backdrop__basearea--blue {
   outline: transparent;
   border: 1px solid var(--accent-color);
   border-radius: 4px;
@@ -1834,7 +1831,7 @@ img {
   }
 }
 
-.form-field {
+.basegroup {
   position: relative;
 }
 
@@ -1948,7 +1945,7 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   width: 40px;
-  height: 35px;
+  height: 40px;
   border-radius: 50%;
   border: 1px solid transparent;
   cursor: pointer;

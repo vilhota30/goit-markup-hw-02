@@ -121,24 +121,24 @@
     }
 }
 
-.form-field:focus-within>.backdrop__baseword--blue {
+.basegroup:focus-within>.backdrop__baseword--blue {
     outline: transparent;
     border: 1px solid var(--accent-color);
     border-radius: 4px;
 }
 
-.form-field:focus-within>.backdrop__modalname--blue {
+.basegroup:focus-within>.backdrop__modalname--blue {
     fill: var(--accent-color);
 }
-.form-field:focus-within>.backdrop__modalnumber--blue {
-    fill: var(--accent-color);
-}
-
-.form-field:focus-within>.backdrop__modalemail--blue {
+.basegroup:focus-within>.backdrop__modalnumber--blue {
     fill: var(--accent-color);
 }
 
-.form-field:focus-within>.backdrop__basearea--blue {
+.basegroup:focus-within>.backdrop__modalemail--blue {
+    fill: var(--accent-color);
+}
+
+.basegroup:focus-within>.backdrop__basearea--blue {
     outline: transparent;
     border: 1px solid var(--accent-color);
     border-radius: 4px;
@@ -218,7 +218,11 @@
     }
 }
 
-.form-field {
+// .form-field {
+//     position: relative;
+// }
+
+.basegroup {
     position: relative;
 }
 
