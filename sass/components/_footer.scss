@@ -13,11 +13,9 @@
         text-align: center;
     }
     @media screen and (min-width: 1200px) {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        align-items: baseline;
-        text-align: justify;
+       display: flex;
+       flex-direction: row;
+       text-align: start;
     }
 }
 
@@ -31,18 +29,15 @@
     // align-items: baseline;
     @media screen and (min-width: 768px) {
         display: flex;
-        align-items: flex-start;
-    }
-    @media screen and (min-width: 1200px) {
-        margin-right: 94px;
         align-items: baseline;
+
     }
-}
-.second-baseline {
+
     @media screen and (min-width: 1200px) {
         display: flex;
-        align-content: center;
+        flex-direction: row;
         align-items: baseline;
+        margin-right: 93px;
 
     }
 }
