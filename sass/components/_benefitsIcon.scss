@@ -9,18 +9,16 @@
 .benefits-line__description {
     align-content: flex-start;
     align-self: baseline;
-    @media screen and (min-width: 1140px) {
+    @media screen and (min-width: 1200px) {
        width: 270px;
        height: 72px;
     }
 }
 .benefits-line__line {
 
-    // @media screen and (min-width: 768px) {
-    // &:not(:last-child) {
-    //         margin-right: 30px;
-    //     }
-    // }
+    @media screen and (max-width: 767px) {
+        text-align: center;
+    }
    align-self: baseline;
     color: var(--logofirst-color);
     font-weight: 700;
@@ -69,10 +67,10 @@
 .benefits-line__text-nodemiddle,
 .benefits-line__text-nodefinish {
     align-items: center;
-    @media screen and (max-width: 479px) {
-            margin-botton: 30px;
+    @media screen and (max-width: 767px) {
+            margin-bottom: 30px;
         }
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 768px) {
         display: block;
         width: calc((100% - 4 * 15px) / 2);
         margin: 15px;

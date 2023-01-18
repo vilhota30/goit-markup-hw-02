@@ -167,6 +167,10 @@
         min-width: 370px;
         height: 40px;
     }
+    @media screen and (min-width: 480px) {
+        width: 370px;
+        height: 40px;
+    }
 
     // transition-property: outline, border;
     // transition-duration: 250ms;
@@ -202,7 +206,13 @@
 
     display: flex;
     justify-content: center;
-    margin-left: 6px;
+    @media screen and (max-width: 1199px) {
+    margin-left: 16px;
+    font-size: 12px;
+    line-height: calc(14/12);
+    
+    }
+    // margin-left: 6px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -277,12 +287,8 @@
     transform: translateY(-50%);
     border: 1px solid #212121;
     fill: var(--button-color);
-    @media screen and (max-width: 767px) {
-        top: 79%;
-        left: 9%;
-    }
-    @media screen and (min-width: 768px) {
-        top: 79.5%;
+    @media screen and (max-width: 1199px) {
+        top: 80.5%;
         left: 10%;
     }
     @media screen and (min-width: 1200px) {
