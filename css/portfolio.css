@@ -730,10 +730,20 @@ img {
       -ms-flex-align: baseline;
           align-items: baseline;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .container-footer {
     display: block;
     text-align: center;
+  }
+}
+@media screen and (min-width: 481px) {
+  .container-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -746,6 +756,9 @@ img {
         -ms-flex-direction: row;
             flex-direction: row;
     text-align: start;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 
@@ -831,6 +844,10 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -842,9 +859,10 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-right: 165px;
     margin-bottom: 60px;
   }
@@ -882,6 +900,20 @@ img {
 
 .footer-info {
   background-color: var(--footerbg-color);
+}
+@media screen and (max-width: 1199px) {
+  .footer-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer-info {
@@ -1073,6 +1105,11 @@ img {
   text-transform: uppercase;
   color: #FFFFFF;
 }
+@media screen and (min-width: 481px) {
+  .section-number__subscribe {
+    text-align: center;
+  }
+}
 @media screen and (min-width: 1200px) {
   .section-number__subscribe {
     text-align: start;
@@ -1135,7 +1172,13 @@ img {
   border-radius: 2px;
   cursor: pointer;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
+  .btn-subscribe {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+}
+@media screen and (min-width: 481px) {
   .btn-subscribe {
     -ms-flex-item-align: center;
         align-self: center;
