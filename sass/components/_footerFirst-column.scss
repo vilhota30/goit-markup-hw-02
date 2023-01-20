@@ -3,13 +3,14 @@
     flex-direction: column;
     @media screen and (max-width: 767px) {
         display: flex;
+        flex-direction: column;
         align-items: center;
         margin-bottom: 60px;
         
     }
     @media screen and (min-width: 768px) {
         display: flex;
-        align-items: flex-start;
+        flex-direction: column;
         margin-right: 165px;
         margin-bottom: 60px;
     }
@@ -47,11 +48,20 @@
 }
 
 .footer-info {
+    @media screen and(max-width: 1199px) {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
     @media screen and (min-width: 1200px) {
         display: inline-block;
-    // flex-direction: column;
-
     }
+    // @media screen and (min-width: 481px) {
+    //     display: flex;
+    //     flex-direction: column;
+    // }
+
     background-color: var(--footerbg-color);
 }
 
