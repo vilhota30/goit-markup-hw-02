@@ -47,8 +47,7 @@
      display: block;
     list-style: none;
     color: var(--ptext-color);
-
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
         margin: -15px;
@@ -67,14 +66,14 @@
 .benefits-line__text-nodemiddle,
 .benefits-line__text-nodefinish {
     align-items: center;
-    @media screen and (max-width: 767px) {
-            margin-bottom: 30px;
-        }
-    @media screen and (min-width: 768px) {
+     @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
         display: block;
-        width: calc((100% - 4 * 15px) / 2);
-        margin: 15px;
-        
+    }
+    @media screen and (min-width: 768px) {
+       display: block;
+       width: calc((100% - 4 * 15px) / 2);
+       margin: 15px;
     }
 
     @media screen and (min-width: 1200px) {
