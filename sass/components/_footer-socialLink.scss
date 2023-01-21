@@ -41,15 +41,19 @@
 
  .jointoday {
    display: inline-block;
-   align-items: flex-start;
+   align-items: center;
    flex-direction: column;
    @media screen and (max-width: 1199px) {
       margin-bottom: 60px;
    }
-  
+   
    @media screen and (min-width: 768px) {
       display: flex;
       align-items: flex-start;
+   }
+   @media screen and (min-width: 481px) {
+      display: flex;
+      justify-content: center;
    }
 
  }
@@ -65,12 +69,14 @@
     line-height: calc(16/14);
     letter-spacing: 0.03em;
     text-transform: uppercase;
+   
     @media screen and (min-width: 768px) {
       align-self: center;
     }
     @media screen and (min-width: 1200px) {
       align-self: flex-start;
     }
+    
  }
 
  .socialsgroup {
