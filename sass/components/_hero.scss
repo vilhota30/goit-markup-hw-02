@@ -15,37 +15,37 @@
     background-size: cover;
     background-image: linear-gradient(to right,
                 rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4)), url(../../images/hero/img_sqphone@1x.jpg);
+                rgba(47, 48, 58, 0.4)), url(../images/hero/img_sqphone@1x.jpg);
     @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             background-image: linear-gradient(to right,
                         rgba(47, 48, 58, 0.4),
-                        rgba(47, 48, 58, 0.4)), url(../../images/hero/img_sgphone@2x.jpg);
+                        rgba(47, 48, 58, 0.4)), url(../images/hero/img_sgphone@2x.jpg);
         }
      
     @media screen and (min-width: 481px) {
         background-image: linear-gradient(to right,
                     rgba(47, 48, 58, 0.4),
-                    rgba(47, 48, 58, 0.4)), url(../../images/hero/img_sqtablet@1x.jpg);
+                    rgba(47, 48, 58, 0.4)), url(../images/hero/img_sqtablet@1x.jpg);
     @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             background-image: linear-gradient(to right,
                     rgba(47, 48, 58, 0.4),
-                    rgba(47, 48, 58, 0.4)), url(../../images/hero/img_sqtablet@2x.jpg);
+                    rgba(47, 48, 58, 0.4)), url(../images/hero/img_sqtablet@2x.jpg);
         }
     }
     @media screen and (min-width: 769px) {
         background-image: linear-gradient(to right,
                     rgba(47, 48, 58, 0.4),
-                    rgba(47, 48, 58, 0.4)), url(../../images/hero/Img_sqdesktop@1x.jpg);
+                    rgba(47, 48, 58, 0.4)), url(../images/hero/Img_sqdesktop@1x.jpg);
     @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             background-image: linear-gradient(to right,
                     rgba(47, 48, 58, 0.4),
-                    rgba(47, 48, 58, 0.4)), url(../../images/hero/Img_sqdesktop@2x.jpg);
+                    rgba(47, 48, 58, 0.4)), url(../images/hero/Img_sqdesktop@2x.jpg);
         }
     }
 }
