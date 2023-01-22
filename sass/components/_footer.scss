@@ -34,6 +34,9 @@
 .container-baseline {
     // display: flex;
     // align-items: baseline;
+    @media screen and (max-width: 767px) {
+        margin-bottom: 60px;
+    }
     @media screen and (min-width: 768px) {
         display: flex;
         align-items: baseline;

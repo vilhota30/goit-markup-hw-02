@@ -3,21 +3,29 @@
 }
 
 .clients-section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .clients-section__customers {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
-    line-height: calc(42/36);
+    font-size: 28px;
+    line-height: calc(33/28);
     text-align: center;
     color: #212121;
+
+    @media screen and (min-width: 1200px) {
+    font-size: 36px;
+        line-height: calc(42/36);
+        text-align: center;
+    }
+        
 }
+    
 .regularclients-list {
     display: flex;
     flex-wrap: wrap;
@@ -84,8 +92,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 92px;
-    min-width: 170px;
+    height: 92px;
+    width: 210px;
+    @media screen and (min-width: 768px) {
+        width: 226px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 170px;
+    }
     border: 1px solid #afb1b8;
     border-radius: 4px;
 
