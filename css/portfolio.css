@@ -145,57 +145,64 @@ img {
   margin-right: 93px;
 }
 
-.menu-button {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0;
   padding: 0;
-  border: 0;
   background-color: transparent;
+  cursor: pointer;
+  border: transparent;
+  outline: 0;
 }
 @media screen and (min-width: 768px) {
-  .menu-button {
+  .menu-toggle {
     display: none;
   }
 }
 @media screen and (max-width: 767px) {
-  .menu-button {
+  .menu-toggle {
     margin-left: auto;
   }
 }
 
-.menu-button .icon-cross {
+.menu-toggle .icon-cross {
   display: none;
 }
 
-.menu-button.is-open .icon-cross {
+.menu-toggle.is-open .icon-cross {
   display: block;
 }
 
-.menu-button.is-open .icon-menu {
+.menu-toggle.is-open .icon-menu {
   display: none;
 }
 
 .menu-container {
   background-color: var(--button-color);
-  padding: 20px;
   text-align: center;
   font-size: 34px;
 }
 @media screen and (max-width: 767px) {
   .menu-container {
-    display: none;
-    text-align: start;
-    position: absolute;
-    top: 100%;
+    position: fixed;
+    top: 0;
     left: 0;
-    width: 100%;
-    min-width: 480px;
-    height: 769px;
-  }
-  .menu-container.is-open {
-    display: block;
+    width: 100vw;
+    height: 100vw;
+    padding: 32px;
+    z-index: 2000;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
   }
 }
 @media screen and (min-width: 768px) {
@@ -215,6 +222,11 @@ img {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+}
+
+.menu-container.is-open {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
 }
 
 @media screen and (max-width: 767px) {
@@ -297,6 +309,7 @@ img {
 @media screen and (min-width: 768px) {
   .info-about {
     display: block;
+    margin-left: auto;
   }
 }
 @media screen and (min-width: 1200px) {
