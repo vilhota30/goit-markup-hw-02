@@ -45,12 +45,24 @@
     margin-right: 93px;
 }
 
-.menu-button {
- display: inline-flex;
+.menu-toggle {
+//  display: inline-flex;
+//  margin: 0;
+//  padding: 0;
+//  border: 0;
+//  background-color: transparent;
+
+ min-height: 40px;
+ min-width: 40px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
  margin: 0;
  padding: 0;
- border: 0;
  background-color: transparent;
+ cursor: pointer;
+ border: transparent;
+ outline: 0;
 
 @media screen and (min-width: 768px) {
     display: none;
@@ -60,37 +72,33 @@
 }
 
 }
-.menu-button .icon-cross {
+.menu-toggle .icon-cross {
     display: none;
 }
-.menu-button.is-open .icon-cross {
+.menu-toggle.is-open .icon-cross {
     display: block;
 }
-.menu-button.is-open .icon-menu {
+.menu-toggle.is-open .icon-menu {
     display: none;
 }
+
+
+
 .menu-container {
     
     background-color: var(--button-color);
-    padding: 20px;
-
     text-align: center;
     font-size: 34px;
 
-    @media screen and (max-width:767px) {
-        display: none;
-        text-align: start;
-        position: absolute;
-        top: 100%;
+     @media screen and (max-width:767px) {
+        position: fixed;
+        top: 0;
         left: 0;
-        width: 100%;
-        min-width: 480px;
-        height: 769px;
-       
-
-        &.is-open {
-            display: block;
-        }
+        width: 100vw;
+        height: 100vw;
+        padding: 32px;
+        z-index: 2000;
+        transform: translateX(100%);
     }
     @media screen and (min-width: 768px) {
         display: flex;
@@ -102,6 +110,9 @@
         
     }
 
+}
+.menu-container.is-open {
+    transform: translateX(0%);
 }
 .navigation {
     @media screen and (max-width: 767px) {
@@ -150,13 +161,13 @@
 .info-about {
     @media screen and (max-width: 767px) {
         display: block;
-        // align-items: flex-end;
+
         margin-left: 0px;
         margin-bottom: 64px;
     }
     @media screen and (min-width: 768px) {
         display: block;
-
+        margin-left: auto;
     }
     @media screen and (min-width: 1200px) {
         display: flex;
