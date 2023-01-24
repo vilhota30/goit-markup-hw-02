@@ -4,11 +4,21 @@
 
 .benefits-section {
     @extend %section;
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .benefits-line__description {
     align-content: flex-start;
     align-self: baseline;
+    width: 450px;
+    height: 50px;
+    @media screen and (min-width: 768px) {
+       width: 354px;
+       height: 48px;
+    }
     @media screen and (min-width: 1200px) {
        width: 270px;
        height: 72px;
@@ -70,11 +80,14 @@
         &:not(:last-child) {
         margin-bottom: 30px;
         }
-        // margin-bottom: 30px;
+        width: 450px;
+        height: 226px;
         display: block;
     }
     @media screen and (min-width: 768px) {
        display: block;
+       width: 354px;
+       height: 224px;
        width: calc((100% - 4 * 15px) / 2);
        margin: 15px;
     }

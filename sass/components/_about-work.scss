@@ -4,18 +4,12 @@
 }
 
 .section-title {
-    padding-bottom: 94px;
-
-    @media screen and (min-width: 768px) {
-        display: none;
-    }
-
-    @media screen and (max-width: 767px) {
+     @media screen and (max-width: 1199px) {
         display: none;
     }
      @media screen and (min-width: 1200px) {
-        display: flex;
-        flex-direction: row;
+        padding-top: 94px;
+        padding-bottom: 94px;
      }
 }
 
@@ -35,7 +29,7 @@
 
 }
 
-.project__photo-work {
+.project__photo-work:not(:last-child) {
     margin-right: 30px;
 }
 
