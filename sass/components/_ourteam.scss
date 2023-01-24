@@ -5,6 +5,12 @@
 .ourteam-section {
     @extend %section;
     background-color: #F5F4FA;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    }
 }
 .employee {
     // display: block;
@@ -55,7 +61,6 @@
 
 .ourteam-section__section-titleabout {
     text-align: center;
-    margin-top: 0px;
     margin-bottom: 30px;
 
     font-weight: 700;
@@ -69,6 +74,7 @@
     @media screen and (min-width: 1200px) {
     font-size: 36px;
     line-height: calc(42/36);
+    margin-bottom: 50px;
     }
 }
 
