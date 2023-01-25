@@ -32,21 +32,17 @@
     @media screen and (min-width: 480px) {
             height: 60px;
             align-items: center;
-            justify-content: center;
         }
     
         @media screen and (min-width: 768px) {
             height: 80px;
+            display: flex;
         }
         @media screen and (min-width: 1200px) {
             height: 80px;
         }
 }
 
-
-.first-nav .logo {
-    margin-right: 93px;
-}
 
 .menu-button {
 
@@ -87,21 +83,53 @@
     display: none;
     background-color: var(--button-color);
     font-size: 34px;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 400px;
     padding: 48px 40px;
     z-index: 2000;
-    background-color: var(--button-color);
-    font-size: 34px;
-
     &.is-open {
         display: block;
+    } 
+    @media screen and (min-width: 768px) {
+        display: flex;
+        padding: 0;
+        justify-content: space-between;
+    }
+    @media screen and (max-width: 767px) {
+        position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+    }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.navigation {
+    
+    @media screen and (max-width: 767px) {
+        display: flex;
+        margin-bottom: auto;
+    }
+}
+
+
+.first-nav .logo {
+   
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-self: center;
+        justify-content: flex-start;
+        margin-right: 93px;
+    }
+    @media screen and (min-width: 1200px) {
+
     }
 }
 .contacts {
+    @media screen and (max-width: 767px) {
+        display: flex;
+        margin-top: auto;
+    }
     
     @media screen and (max-width: 1200px) {
        display: flex;
@@ -110,9 +138,17 @@
     @media screen and (min-width: 1200px) {
         display: flex;
         align-items: center;
+        margin-left: auto;
         margin-right: auto;
     }
     
+}
+.site-nav {
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        margin-right: 215px;
+
+    }
 }
 
 
