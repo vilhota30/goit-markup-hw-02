@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,12 +16,11 @@
 </head>
 
 <body>
-    <!--------------------------- Шапка------------------------>
+         <!-------------------------------- Header ---------------------------->
     <header class="section-header">
     <div class="container">
         <nav class="first-nav">
-        <!-- <a href=" " class="logo">Web<span class="logo-header section-header__logo-header">Studio</span></a> -->
-        <!-------------------Навігація------------------------->
+        <!------------------------------Navigation----------------------------------->
             <a href=" " class="logo">Web<span class="logo-header section-header__logo-header">Studio</span></a>
             <button type="button" class="menu-button js-open-menu" aria-expanded="false" aria-controls="menu-container" data-menu-button>
                  <svg width="40" height="40" aria-label="Перемикач мобільного меню">
@@ -93,7 +92,7 @@
 
 
 </header> 
-<!---------------------Герой------------------------>
+<!------------------------ Hero --------------------->
 <main> 
     <section class="hero overlay">
         <div class="container-hero">
@@ -102,7 +101,7 @@
     </div>
     </section>
 
-<!-----------------------------Переваги------------------------------>
+   <!-------------------------- Benefits ----------------------->
 <section class="benefits-section">
     <div class="container-benefits">
         <h2 class="benefits-section__title">Переваги</h2>
@@ -138,7 +137,7 @@
  </div>
 </section>
 
-<!------------------------- Чим ми займаємося-------------------------------->
+<!-------------------------- About work ----------------------->
 <section class="section-title">
     <div class="container-project">
         <h2 class="section-title__section-titlework">Чим ми займаємося</h2>
@@ -146,15 +145,13 @@
         <li class="project__photo-work">
             <div class="thumb">
                  <img 
-                     srcset=".\images\aboutwork\img1sqdesktop-370.jpg 1x,
-                             .\images\aboutwork\img1sqdesktop-740.jpg 2x"
-
-                 src=".\images\aboutwork\img1sqdesktop-370.jpg" 
+                     srcset="../images/aboutwork/img1sqdesktop-370.jpg 1x,
+                             ../images/aboutwork/img1sqdesktop-740.jpg 2x"
+                 src="../images/aboutwork/img1sqdesktop-370.jpg" 
                  alt="Руки на клавіатурі" 
                  width="370" />
             </div>
 
-            <!-- <img src="./images/image2jpg/box1.jpg" alt="Руки на клавіатурі" width="370" height="294"/> -->
             <div class="input-column">
                 <p class="input-column__input-text">
                     Десктопні додатки
@@ -164,11 +161,10 @@
         <li class="project__photo-work">
             <div class="thumb">
                 <img 
-                    srcset=".\images\aboutwork\img2sqdesktop-370.jpg 1x, .\images\aboutwork\img2sqdesktop-740.jpg 2x"
+                    srcset="../images/aboutwork/img2sqdesktop-370.jpg 1x, ../images/aboutwork/img2sqdesktop-740.jpg 2x"
 
-                src=".\images\aboutwork\img2sqdesktop-370.jpg" alt="Телефон в руках" width="370" />
+                src="../images/aboutwork/img2sqdesktop-370.jpg" alt="Телефон в руках" width="370" />
             </div>
-            <!-- <img src="./images/image2jpg/box2.jpg" alt="Телефон в руках" width="370" height="294"/> -->
             <div class="input-column">
                 <p class="input-column__input-text">
                     Мобільні додатки
@@ -178,11 +174,10 @@
         <li class="project__photo-work">
             <div class="thumb">
              <img 
-                 srcset=".\images\aboutwork\img3sqdesktop-370.jpg 1x, .\images\aboutwork\img3sqdesktop-740.jpg 2x"
+                 srcset="../images/aboutwork/img3sqdesktop-370.jpg 1x, ../images/aboutwork/img3sqdesktop-740.jpg 2x"
 
-                src=".\images\aboutwork\img3sqdesktop-370.jpg" alt="Планшет в руках" width="370" />
+                src="../images/aboutwork/img3sqdesktop-370.jpg" alt="Планшет в руках" width="370" />
             </div>
-            <!-- <img src="./images/image2jpg/box3.jpg" alt="Планшет в руках" width="370" height="294"/> -->
             <div class="input-column">
                 <p class="input-column__input-text">
                     Дизайнерські рішення
@@ -192,7 +187,7 @@
     </ul>
   </div>
 </section>
-<!---------------------Наша команда----------------------------------->
+    <!------------------------------- Our Team  ------------------------>
 <section class="ourteam-section">
     <div class="container-ourteam">
         <h2 class="ourteam-section__section-titleabout">Наша команда</h2>
@@ -201,17 +196,16 @@
         <li class="employee__team-border">
             <picture>
                <source media="(min-width: 1200px)"
-               srcset=".\images\team\imgdesktop1sq_@1x.jpg 1x, .\images\team\imgdesktop1sq_@2x.jpg 2x" />
+               srcset="../images/team/imgdesktop1sq_@1x.jpg 1x, ../images/team/imgdesktop1sq_@2x.jpg 2x" />
 
                <source media="(min-width: 768px)"
-               srcset=".\images\team\imgtablet1sq_@1x.jpg 1x, .\images\team\imgtablet1sq_@2x.jpg 2x" />
+               srcset="../images/team/imgtablet1sq_@1x.jpg 1x, ../images/team/imgtablet1sq_@2x.jpg 2x" />
 
                <source media="(max-width: 767px)"
-               srcset=".\images\team\img1sq_@1x.jpg 1x, .\images\team\img1sq_@2x.jpg 2x" />
+               srcset="../images/team/img1sq_@1x.jpg 1x, ../images/team/img1sq_@2x.jpg 2x" />
 
-                <img class="employee__photo-team" src=".\images\team\img1sq_@1x.jpg" alt="Чоловік в окулярах" width="450" height="460" loading="lazy" />
+                <img class="employee__photo-team" src="../images/team/img1sq_@1x.jpg" alt="Чоловік в окулярах" width="450" height="460" loading="lazy" />
             </picture>
-            <!-- <img class="employee__photo-team" src="./images/image3/photo1.jpg" alt="Чоловік в окулярах" width="270" height="260"> -->
             <div class="employee__group-center"> 
                 <h3 class="employee__team-member">Ігор Дем'яненко</h3>
             <p class="employee__work">Product Designer</p>
@@ -262,16 +256,15 @@
         <li class="employee__team-border">
             <picture>
                 <source media="(min-width: 1200px)"
-                srcset=".\images\team\imgdesktop2sq_@1x.jpg 1x, .\images\team\imgdesktop2sq_@2x.jpg 2x" />
+                srcset="../images/team/imgdesktop2sq_@1x.jpg 1x, ../images/team/imgdesktop2sq_@2x.jpg 2x" />
                 
-                <source media="(min-width: 768px)" srcset=".\images\team\imgtablet2sq_@1x.jpg 1x, .\images\team\imgtablet2sq_@2x.jpg 2x" />
+                <source media="(min-width: 768px)" srcset="../images/team/imgtablet2sq_@1x.jpg 1x, ../images/team/imgtablet2sq_@2x.jpg 2x" />
                 
-                <source media="(max-width: 767px)" srcset=".\images\team\img2sq_@1x.jpg 1x, .\images\team\img2sq_@2x.jpg 2x" />
+                <source media="(max-width: 767px)" srcset="../images/team/img2sq_@1x.jpg 1x, ../images/team/img2sq_@2x.jpg 2x" />
 
-            <img class="employee__photo-team" src=".\images\team\img2sq_@1x.jpg" alt="Жінка" width="450" height="460" loading="lazy" />
+            <img class="employee__photo-team" src="../images/team/img2sq_@1x.jpg" alt="Жінка" width="450" height="460" loading="lazy" />
 
             </picture>
-            <!-- <img class="employee__photo-team" src="./images/image3/photo2.jpg" alt="Жінка" width="270" height="260"> -->
             <div class="employee__group-center"> 
                 <h3 class="employee__team-member">Ольга Рєпіна</h3>
             <p class="employee__work">Frontend Developer</p>
@@ -318,16 +311,15 @@
         <li class="employee__team-border">
             <picture>
             <source media="(min-width: 1200px)"
-                srcset=".\images\team\imgdesktop3sq_@1x.jpg 1x, .\images\team\imgdesktop3sq_@2x.jpg 2x" />
+                srcset="../images/team/imgdesktop3sq_@1x.jpg 1x, ../images/team/imgdesktop3sq_@2x.jpg 2x" />
             
-            <source media="(min-width: 768px)" srcset=".\images\team\imgtablet3sq_@1x.jpg 1x, .\images\team\imgtablet3sq_@2x.jpg 2x" />
+            <source media="(min-width: 768px)" srcset="../images/team/imgtablet3sq_@1x.jpg 1x, ../images/team/imgtablet3sq_@2x.jpg 2x" />
             
-            <source media="(max-width: 767px)" srcset=".\images\team\imgphone3sq_@1x.jpg 1x, .\images\team\imgphone3sq_@2x.jpg 2x" />
+            <source media="(max-width: 767px)" srcset="../images/team/imgphone3sq_@1x.jpg 1x, ../images/team/imgphone3sq_@2x.jpg 2x" />
 
-            <img class="employee__photo-team" src=".\images\team\imgphone3sq_@1x.jpg" alt="Хлопець в світлій сорочці" width="450" height="460" loading="lazy" />
+            <img class="employee__photo-team" src="../images/team/imgphone3sq_@1x.jpg" alt="Хлопець в світлій сорочці" width="450" height="460" loading="lazy" />
 
             </picture>
-            <!-- <img class="employee__photo-team" src="./images/image3/photo3.jpg" alt="Хлопець в світлій сорочці" width="270" height="260"> -->
             <div class="employee__group-center">
                 <h3 class="employee__team-member">Микола Тарасов</h3>
             <p class="employee__work">Marketing</p>
@@ -375,17 +367,16 @@
            <li class="employee__team-border">
             <picture>
             <source media="(min-width: 1200px)"
-                srcset=".\images\team\imgdesktop4sq_@1x.jpg 1x, .\images\team\imgdesktop4sq_@2x.jpg 2x" />
+                srcset="../images/team/imgdesktop4sq_@1x.jpg 1x, ../images/team/imgdesktop4sq_@2x.jpg 2x" />
             
-            <source media="(min-width: 768px)" srcset=".\images\team\imgtablet4sq_@1x.jpg 1x, .\images\team\imgtablet4sq_@2x.jpg 2x" />
+            <source media="(min-width: 768px)" srcset="../images/team/imgtablet4sq_@1x.jpg 1x, ../images/team/imgtablet4sq_@2x.jpg 2x" />
             
-            <source media="(max-width: 767px)" srcset=".\images\team\img4phonesq_@1x.jpg 1x, .\images\team\img4phonesq_@2x.jpg 2x" />
+            <source media="(max-width: 767px)" srcset="../images/team/img4phonesq_@1x.jpg 1x, ../images/team/img4phonesq_@2x.jpg 2x" />
 
 
-                <img class="employee__photo-team" src=".\images\team\img4phonesq_@1x.jpg" alt="Чоловік в окулярах" width="450" height="460" loading="lazy" />
+                <img class="employee__photo-team" src="../images/team/img4phonesq_@1x.jpg" alt="Чоловік в окулярах" width="450" height="460" loading="lazy" />
 
             </picture>
-            <!-- <img class="employee__photo-team" src="./images/image3/photo4.jpg" alt="Чоловік в окулярах" width="270" height="260"> -->
             <div class="employee__group-center">
                 <h3 class="employee__team-member">Михайло Єрмаков</h3>
             <p class="employee__work last">UI Designer</p>
@@ -433,7 +424,7 @@
     </ul>  
 </div>
 </section>
-<!------------------------------Постійні клієнти------------------------------>
+  <!----------------------------------- Clients ------------------------------------>
 
 <section class="clients-section">
     <div class="container-clients">
@@ -485,7 +476,7 @@
     </div>
 </section>
 </main>
-<!--------------------------Підвал-------------------------------------->
+    <!------------------------------ Footer ----------------------------->
 <footer class="section-number">
     <div class="container-footer">
             <div class="container-baseline">
@@ -555,8 +546,6 @@
             <div class="follow">
                 <label class="section-number__subscribe" for="subscribe_email">Підпишіться на розсилку</label>
                 <form class="main-line">
-
-                    <!-- <label class="section-number__subscribe" for="subscribe_email">Підпишіться на розсилку</label> -->
                     <input class="section-number__subscribe-info section-number__subscribe-info--blueborder" type="email"
                         name="email" id="subscribe_email" placeholder="E-mail">
                     <button class="btn-subscribe" type="submit">Підписатися
@@ -569,12 +558,12 @@
             
             </div>
 
-        </div>
+    </div>
 
-</div>
+
 </footer>
 
-<!----------------------------Modal window-------------------------->
+<!---------------------------- Modal window -------------------------->
 
 
  <div class="backdrop is-hidden" data-modal>
@@ -590,7 +579,7 @@
             <div class="form-field">
                 <label class="backdrop__datalist" for="user_name">Ім'я</label>
                 <span class="basegroup">
-                    <input class="backdrop__baseword backdrop__baseword--blue" type="name" name="name" id="user_name" placeholder=" " />
+                    <input class="backdrop__baseword backdrop__baseword--blue" type="text" name="name" id="user_name" placeholder=" " >
                     <svg class="backdrop__modalname backdrop__modalname--blue" width="18" height="18">
                         <use href="./images/sprite.svg#icon-person"></use>
                     </svg>
@@ -601,7 +590,7 @@
             <label class="backdrop__datalist" for="user_number">Телефон</label>
             <span class="basegroup">
                 <input class="backdrop__baseword backdrop__baseword--blue" type="tel" name="phone_number" id="user_number"
-                    placeholder=" " />
+                    placeholder=" " >
                 <svg class="backdrop__modalnumber backdrop__modalnumber--blue" width="18" height="18">
                     <use href="./images/sprite.svg#icon-phone"></use>
                 </svg>
@@ -630,21 +619,20 @@
             
         </form>
              <label class="backdrop__confirm">
-            <div class="container-confirm">
-                <!-- <input class="backdrop__baseconsent" type="checkbox" name="choose" value="confirmation"> -->
+
                 <span class="form-group">
                    <input class="backdrop__baseconsent" type="checkbox" name="choose" value="confirmation">
                     <svg class="backdrop__consent-icon backdrop__consent-icon--check" width="16" height="16">
                         <use href="./images/sprite.svg#icon-iconcheckbox"></use>
                     </svg>
-                    <p class="backdrop__contract">
+                    <span class="backdrop__contract">
                         Погоджуюсь з розсилкою та приймаю
                         <a class="backdrop__agreement" href="">Умови договору</a>
-                    </p>
+                    </span>
                 </span>
-            </div>
+                </label>
                 <button type="submit" class="buttonpage backdrop__buttonpage">Відправити</button>
-            </label>    
+
     </div>
 </div>
 

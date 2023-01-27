@@ -2,7 +2,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 100;
+    z-index: 2500;
     width: 100%;
     height: 100%;
     padding: 93px 15px;
@@ -39,11 +39,14 @@
     border-radius: 10px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     @media screen and (min-width: 768px) {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translateX(-50%) translateY(-50%);
+        width: 450px;
+        height: 609px;
+            // position: absolute;
+            // top: 50%;
+            // left: 50%;
+            // transform: translateX(-50%) translateY(-50%);
         }
+
     @media screen and (min-width: 1200px) {
 
         width: 528px;
@@ -159,22 +162,21 @@
     border-radius: 4px;
     min-height: 40px;
     min-width: 370px;
-    @media screen and (min-width: 1200px) {
-        width: 448px;
-        height: 40px;
-    }
-    @media screen and (min-width: 768px) {
-        min-width: 370px;
-        height: 40px;
-    }
     @media screen and (min-width: 480px) {
         width: 370px;
         height: 40px;
     }
 
-    // transition-property: outline, border;
-    // transition-duration: 250ms;
-    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width: 768px) {
+        min-width: 370px;
+        height: 40px;
+    
+    }
+    
+    @media screen and (min-width: 1200px) {
+        width: 448px;
+        height: 40px;
+    }
 }
 .backdrop__basearea {
     @include transitive (outline, border);
@@ -256,12 +258,14 @@
     transform: translateY(-50%);
 }
 
-.container-confirm {
+.form-group {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
     margin-bottom: 30px;
 }
+
 
 .backdrop__baseconsent {
     position: relative;
@@ -282,14 +286,15 @@
     @include transitive (fill, border, background-color);
 
     position: absolute;
-    top: 79.5%;
+    top: 80.5%;
     left: 10%;
     transform: translateY(-50%);
     border: 1px solid #212121;
     fill: var(--button-color);
-    @media screen and (max-width: 1199px) {
-        top: 80.5%;
-        left: 10%;
+
+    @media screen and (min-width: 768px) {
+        top: 79%;
+        left: 12%;
     }
     @media screen and (min-width: 1200px) {
         top: 79.5%;
