@@ -1900,7 +1900,7 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 2500;
   width: 100%;
   height: 100%;
   padding: 93px 15px;
@@ -1945,11 +1945,8 @@ img {
 }
 @media screen and (min-width: 768px) {
   .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-            transform: translateX(-50%) translateY(-50%);
+    width: 450px;
+    height: 609px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -2056,9 +2053,9 @@ img {
   min-height: 40px;
   min-width: 370px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 480px) {
   .backdrop__baseword {
-    width: 448px;
+    width: 370px;
     height: 40px;
   }
 }
@@ -2068,9 +2065,9 @@ img {
     height: 40px;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 1200px) {
   .backdrop__baseword {
-    width: 370px;
+    width: 448px;
     height: 40px;
   }
 }
@@ -2163,7 +2160,7 @@ img {
           transform: translateY(-50%);
 }
 
-.container-confirm {
+.form-group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2173,6 +2170,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 20px;
   margin-bottom: 30px;
 }
 
@@ -2202,17 +2200,17 @@ img {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   position: absolute;
-  top: 79.5%;
+  top: 80.5%;
   left: 10%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   border: 1px solid #212121;
   fill: var(--button-color);
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .backdrop__consent-icon {
-    top: 80.5%;
-    left: 10%;
+    top: 79%;
+    left: 12%;
   }
 }
 @media screen and (min-width: 1200px) {
