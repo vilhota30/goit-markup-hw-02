@@ -1,5 +1,6 @@
 .container-benefits {
     @extend .container;
+    min-width: 480px;
 }
 
 .benefits-section {
