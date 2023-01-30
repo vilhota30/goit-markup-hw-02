@@ -1,16 +1,35 @@
 .container-navsecond {
     margin-left: auto;
     margin-right: auto;
-    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
 
+    @media screen and (min-width: 480px) {
+        width: 480px;
+    }
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
 }
 
 
 .work-element {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    @media screen and (min-width: 480px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    @media screen and (min-width: 768px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+    
 }
 
 .nav-second {
@@ -20,6 +39,22 @@
     justify-content: center;
     margin-bottom: 50px;
     color: var(--logofirst-color);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+    @media screen and (min-width: 480px) {
+        width: 480px;
+    }
+    
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
 
     // transition-property: color, border;
     // transition-duration: 250ms;
@@ -59,23 +94,33 @@
     // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-second__button-type .first {
-    min-width: 73px;
+    width: 73px;
+    margin-right: 8px;
+    margin-bottom: 15px;
 }
 
 .nav-second__button-type .second {
     width: 125px;
+    margin-right: 8px;
+    margin-bottom: 15px;
 }
 
 .nav-second__button-type .third {
     width: 112px;
+    margin-right: 8px;
+    margin-bottom: 15px;
 }
 
 .nav-second__button-type .fourth {
     width: 103px;
+    margin-right: 8px;
+    margin-bottom: 15px;
 }
 
 .nav-second__button-type .fifth {
     width: 130px;
+    margin-right: 8px;
+    margin-bottom: 15px;
 }
 
 .work-element__about-portfolio {
