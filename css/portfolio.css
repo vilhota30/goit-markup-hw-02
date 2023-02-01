@@ -613,20 +613,51 @@ img {
 
 @media screen and (min-width: 480px) {
   .work-element {
-    padding-top: 60px;
+    padding-top: 40px;
     padding-bottom: 60px;
   }
 }
 @media screen and (min-width: 768px) {
   .work-element {
-    padding-top: 60px;
+    padding-top: 14px;
     padding-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
   .work-element {
-    padding-top: 94px;
+    padding-top: 34px;
     padding-bottom: 94px;
+  }
+}
+
+.section-menu {
+  padding-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section-menu {
+    padding-top: 94px;
+  }
+}
+
+.container-menu {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media screen and (min-width: 480px) {
+  .container-menu {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container-menu {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container-menu {
+    width: 1200px;
   }
 }
 
@@ -643,21 +674,36 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: var(--logofirst-color);
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 @media screen and (min-width: 480px) {
   .nav-second {
-    width: 480px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 326px;
   }
 }
 @media screen and (min-width: 768px) {
   .nav-second {
     width: 768px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -685,7 +731,7 @@ img {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   border: transparent;
   cursor: pointer;
-  margin-right: 8px;
+  margin-right: 4px;
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 22px;
@@ -698,6 +744,17 @@ img {
   line-height: 1.625;
   text-align: center;
   letter-spacing: 0.03em;
+}
+@media screen and (min-width: 480px) {
+  .nav-second__menu {
+    margin-right: 4px;
+    margin-bottom: 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav-second__menu {
+    margin-bottom: 0px;
+  }
 }
 
 .nav-second__button-type .first {
