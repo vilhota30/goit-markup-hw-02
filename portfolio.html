@@ -97,8 +97,8 @@
 <!------------Основний контент сторінки------------>
 <main>
     <!---------------------Навігація 2 сторінки---------------------->
-    <section class="work-element">
-        <div class="container-navsecond"> 
+    <section class="section-menu">
+        <div class="container-menu"> 
         <h1 class="work-element__about-portfolio">Portfolio</h1>
         <ul class="nav-second list">
             <li class="nav-second__button-type first">
@@ -117,15 +117,26 @@
                 <button class="nav-second__menu nav-second__menu--blue" type="button">Маркетинг</button>
             </li>
         </ul>
-    
+        </div>
+    </section>
 <!-------------------------------Таблиця фотографій-------------------->
-
+ <section class="work-element">
+    <div class="container-navsecond">
     <ul class="experience list">
     <li class="experience__example">
         <a class="experience__post-example experience__post-example--shadow">
         <div class="team-thumb">
-
-        <img class="experience__photo" src="./images/image.portfolio4/photo1.jpg" alt="Ноутбук" width="370" height="294">
+        <picture>
+            <source media="(min-width: 1200px)"
+                srcset="./images/portfoliophoto/imgdesktopsq_1@1x.jpg 1x, ./images/portfoliophoto/imgdesktopsq_1@2x.jpg 2x">
+        
+            <source media="(min-width: 768px)"
+                srcset="./images/portfoliophoto/imgtabletsq_1@1x.jpg 1x, ./images/portfoliophoto/imgtabletsq_1@2x.jpg 2x">
+        
+            <source media="(max-width: 767px)" srcset="./images/portfoliophoto/imgphonesq_1@1x.jpg 1x, ./images/portfoliophoto/imgphonesq_1@2x.jpg 2x">
+            
+            <img class="experience__photo" src="./images/portfoliophoto/imgphonesq_1@1x.jpg" alt="Ноутбук" width="450" height="294" loading="lazy">
+        </picture>
          <div class="secondoverlay secondoverlay--translate">
           <p class="experience__icon-title">
             Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -144,7 +155,19 @@
     <li class="experience__example">
         <a class="experience__post-example experience__post-example--shadow">
             <div class="team-thumb">
-                <img class="experience__photo" src="./images/image.portfolio4/photo2.jpg" alt="хлопці грають у волейбол" width="370" height="294">
+                <picture>
+                    <source media="(min-width: 1200px)"
+                        srcset="./images/portfoliophoto/imgdesktop_2@1x.jpg 1x, ./images/portfoliophoto/imgdesktop_2@2x.jpg 2x">
+                
+                    <source media="(min-width: 768px)"
+                        srcset="./images/portfoliophoto/imgtablet_2@1x.jpg 1x, ./images/portfoliophoto/imgtablet_2@2x.jpg 2x">
+                
+                    <source media="(max-width: 767px)"
+                        srcset="./images/portfoliophoto/imgphone_2@1x.jpg 1x, ./images/portfoliophoto/imgphone_2@2x.jpg 2x">
+                
+                    <img class="experience__photo" src="./images/portfoliophoto/imgphone_2@1x.jpg" alt="хлопці грають у волейбол" width="450"
+                        height="294" loading="lazy">
+                </picture>
                 <div class="secondoverlay secondoverlay--translate">
                     <p class="experience__icon-title">
                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу
@@ -164,7 +187,19 @@
     <li class="experience__example">
         <a class="experience__post-example experience__post-example--shadow">
             <div class="team-thumb">
-            <img class="experience__photo" src="./images/image.portfolio4/photo3.jpg" alt="Марка рксторану" width="370" height="294">
+                <picture>
+                    <source media="(min-width: 1200px)"
+                        srcset="./images/portfoliophoto/imgdesktop_3@1x.jpg 1x, ./images/portfoliophoto/imgdesktop_3@2x.jpg 2x">
+                
+                    <source media="(min-width: 768px)"
+                        srcset="./images/portfoliophoto/imgtablet_3@1x.jpg 1x, ./images/portfoliophoto/imgtablet_3@2x.jpg 2x">
+                
+                    <source media="(max-width: 767px)"
+                        srcset="./images/portfoliophoto/imgphone_3@1x.jpg 1x, ./images/portfoliophoto/imgphone_3@2x.jpg 2x">
+                    <img class="experience__photo" src="./images/portfoliophoto/imgphone_3@1x.jpg" alt="Марка рксторану" width="450"
+                        height="294" loading="lazy">
+                </picture>
+            
             <div class="secondoverlay secondoverlay--translate">
                 <p class="experience__icon-title">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу
@@ -184,7 +219,17 @@
     <li class="experience__example">
         <a class="experience__post-example experience__post-example--shadow">
             <div class="team-thumb">
-                <img class="experience__photo" src="./images/image.portfolio4/photo4.jpg" alt="Навушники" width="370" height="294">
+                <picture>
+                    <source media="(min-width: 1200px)"
+                        srcset="./images/portfoliophoto/imgdesktop_4@1x.jpg 1x, ./images/portfoliophoto/imgdesktop_4@2x.jpg 2x">
+                
+                    <source media="(min-width: 768px)"
+                        srcset="./images/portfoliophoto/imgtablet_4@1x.jpg 1x, ./images/portfoliophoto/imgtablet_4@2x.jpg 2x">
+                
+                    <source media="(max-width: 767px)"
+                        srcset="./images/portfoliophoto/imgphone_4@1x.jpg 1x, ./images/portfoliophoto/imgphone_4@2x.jpg 2x">
+                    <img class="experience__photo" src="./images/portfoliophoto/imgphone_4@1x.jpg" alt="Навушники" width="450" height="294" loading="lazy">
+                </picture>
                 <div class="secondoverlay secondoverlay--translate">
                     <p class="experience__icon-title">
                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу
@@ -204,7 +249,17 @@
     <li class="experience__example">
         <a class="experience__post-example experience__post-example--shadow">
             <div class="team-thumb">
-                <img class="experience__photo" src="./images/image.portfolio4/photo5.jpg" alt="два бокси" width="370" height="294">
+                <picture>
+                    <source media="(min-width: 1200px)"
+                        srcset="./images/portfoliophoto/imgdesktop_5@1x.jpg 1x, ./images/portfoliophoto/imgdesktop_5@2x.jpg 2x">
+                
+                    <source media="(min-width: 768px)"
+                        srcset="./images/portfoliophoto/imgtablet_5@1x.jpg 1x, ./images/portfoliophoto/imgtablet_5@2x.jpg 2x">
+                
+                    <source media="(max-width: 767px)"
+                        srcset="./images/portfoliophoto/imgphone_5@1x.jpg 1x, ./images/portfoliophoto/imgphone_5@2x.jpg 2x">
+                    <img class="experience__photo" src="./images/portfoliophoto/imgphone_5@1x.jpg" alt="два бокси" width="450" height="294" loading="lazy">
+                </picture>
                 <div class="secondoverlay secondoverlay--translate">
                     <p class="experience__icon-title">
                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу
@@ -224,7 +279,18 @@
     <li class="experience__example">
         <a class="experience__post-example experience__post-example--shadow">
             <div class="team-thumb">
-                <img class="experience__photo" src="./images/image.portfolio4/photo6.jpg" alt="Екран комп'ютера" width="370" height="294">
+                <picture>
+                    <source media="(min-width: 1200px)"
+                        srcset="./images/portfoliophoto/imgdesktop_6@1x.jpg 1x, ./images/portfoliophoto/imgdesktop_6@2x.jpg 2x">
+                
+                    <source media="(min-width: 768px)"
+                        srcset="./images/portfoliophoto/imgtablet_6@1x.jpg 1x, ./images/portfoliophoto/imgtablet_6@2x.jpg 2x">
+                
+                    <source media="(max-width: 767px)"
+                        srcset="./images/portfoliophoto/imgphone_6@1x.jpg 1x, ./images/portfoliophoto/imgphone_6@2x.jpg 2x">
+                    <img class="experience__photo" src="./images/portfoliophoto/imgphone_6@1x.jpg" alt="Екран комп'ютера" width="450"
+                        height="294" loading="lazy">
+                </picture>
                 <div class="secondoverlay secondoverlay--translate">
                     <p class="experience__icon-title">
                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу
@@ -244,7 +310,18 @@
     <li class="experience__example">
         <a class="experience__post-example experience__post-example--shadow">
             <div class="team-thumb">
-                <img class="experience__photo" src="./images/image.portfolio4/photo7.jpg" alt="Розгорнута книга" width="370" height="294">
+                <picture>
+                    <source media="(min-width: 1200px)"
+                        srcset="./images/portfoliophoto/imgdesktop_7@1x.jpg 1x, ./images/portfoliophoto/imgdesktop_7@2x.jpg 2x">
+                
+                    <source media="(min-width: 768px)"
+                        srcset="./images/portfoliophoto/imgtablet_7@1x.jpg 1x, ./images/portfoliophoto/imgtablet_7@2x.jpg 2x">
+                
+                    <source media="(max-width: 767px)"
+                        srcset="./images/portfoliophoto/imgphone_7@1x.jpg 1x, ./images/portfoliophoto/imgphone_7@2x.jpg 2x">
+                    <img class="experience__photo" src="./images/portfoliophoto/imgphone_7@1x.jpg" alt="Розгорнута книга" width="450"
+                        height="294" loading="lazy">
+                </picture>
                 <div class="secondoverlay secondoverlay--translate">
                     <p class="experience__icon-title">
                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу
@@ -264,7 +341,18 @@
     <li class="experience__example">
         <a class="experience__post-example experience__post-example--shadow">
             <div class="team-thumb">
-                <img class="experience__photo" src="./images/image.portfolio4/photo8.jpg" alt="Бірка з надписом проєкту" width="370" height="294">
+                <picture>
+                    <source media="(min-width: 1200px)"
+                        srcset="./images/portfoliophoto/imgdesktop_8@1x.jpg 1x, ./images/portfoliophoto/imgdesktop_8@2x.jpg 2x">
+                
+                    <source media="(min-width: 768px)"
+                        srcset="./images/portfoliophoto/imgtablet_8@1x.jpg 1x, ./images/portfoliophoto/imgtablet_8@2x.jpg 2x">
+                
+                    <source media="(max-width: 767px)"
+                        srcset="./images/portfoliophoto/imgphone_8@1x.jpg 1x, ./images/portfoliophoto/imgphone_8@2x.jpg 2x">
+                    <img class="experience__photo" src="./images/portfoliophoto/imgdesktop_8@1x.jpg" alt="Бірка з надписом проєкту" width="450"
+                        height="294" loading="lazy">
+                </picture>
                 <div class="secondoverlay secondoverlay--translate">
                     <p class="experience__icon-title">
                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу
@@ -284,7 +372,19 @@
     <li class="experience__example">
         <a class="experience__post-example experience__post-example--shadow">
             <div class="team-thumb">
-                <img class="experience__photo" src="./images/image.portfolio4/photo9.jpg" alt="Руки на клавіатурі ноутбука" width="370" height="294">
+                <picture>
+                    <source media="(min-width: 1200px)"
+                        srcset="./images/portfoliophoto/imgdesktop_9@1x.jpg 1x, ./images/portfoliophoto/imgdesktop_9@2x.jpg 2x">
+                
+                    <source media="(min-width: 768px)"
+                        srcset="./images/portfoliophoto/imgtablet_9@1x.jpg 1x, ./images/portfoliophoto/imgtablet_9@2x.jpg 2x">
+                
+                    <source media="(max-width: 767px)"
+                        srcset="./images/portfoliophoto/imgphone_9@1x.jpg 1x, ./images/portfoliophoto/imgphone_9@2x.jpg 2x">
+                    <img class="experience__photo" src="./images/portfoliophoto/imgphone_9@1x.jpg" alt="Руки на клавіатурі ноутбука" width="450"
+                        height="294" loading="lazy">
+                </picture>
+                
                 <div class="secondoverlay secondoverlay--translate">
                     <p class="experience__icon-title">
                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу
@@ -391,7 +491,7 @@
 
     </div>
 </footer>
-
+<script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
