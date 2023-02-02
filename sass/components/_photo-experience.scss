@@ -3,26 +3,15 @@
     padding-bottom: 20px;
     padding-left: 24px;
     padding-right: 24px;
-    border-bottom: 1px solid #f1f1f1;
+    // border-bottom: 1px solid #f1f1f1;
     border-left: 1px solid #f1f1f1;
     border-right: 1px solid #f1f1f1;
-    @media screen and (min-width: 480px) {
-        width: 402px;
-        height: 70px;
-    }
-    @media screen and (min-width: 768px) {
-        width: 306px;
-        height: 70px;
-    }
-    @media screen and (min-width: 1200px) {
-        width: 322px;
-        height: 70px;
-    }
  }
  .experience__post-example {
 
     @include transitive (box-shadow);
-     display: block;
+    display: block;
+    border-bottom: 1px solid #f1f1f1;
     @media screen and (min-width: 480px) {
             width: 450px;
             height: 404px;
@@ -30,7 +19,7 @@
     
         @media screen and (min-width: 768px) {
             width: 354px;
-            height: 440px;
+            height: 404px;
         }
     
         @media screen and (min-width: 1200px) {
@@ -64,17 +53,24 @@
 }
 
  .experience__example .experience__title {
+    @media screen and (min-width: 768px) {
+        width: 306px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 380px;
+    } 
      margin-bottom: 4px;
      font-family: 'Roboto';
      font-style: normal;
      font-weight: 700;
      font-size: 18px;
-     line-height: calc(36/18);
+    //  line-height: calc(36/18);
      letter-spacing: 0.06em;
      content-visibility: visible;
 
      color: var(--logofirst-color);
  }
+ 
  .experience__example .experience__worktype {
      font-family: 'Roboto';
      font-style: normal;
