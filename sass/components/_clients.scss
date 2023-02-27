@@ -50,6 +50,10 @@
         margin: -15px;
     }
 
+    @media screen and (max-width: 479px) {
+        width: 310px;
+    }
+
 }
 
 .regularclients-list__number-client {
@@ -59,7 +63,7 @@
     @media screen and (max-width: 479px) {
     //    display: block;
     //    margin-bottom: 15px;
-         width: calc((100% - 4 * 15px) / 2);
+        //  width: calc((100% - 4 * 15px) / 2);
          margin: 15px;
     }
 

@@ -1,6 +1,13 @@
 .container-benefits {
     @extend .container;
-    min-width: 480px;
+    
+    @media screen and (min-width: 480px) {
+        min-width: 480px;
+    }
+    @media screen and (max-width: 479px) {
+        width: 320px;
+    }
+    
 }
 
 .benefits-section {
@@ -15,6 +22,10 @@
     align-content: flex-start;
     align-self: baseline;
     width: 450px;
+
+    @media screen and (max-width: 479px) {
+        width: 320px;
+    }
     @media screen and (min-width: 768px) {
        width: 354px;
        height: 48px;
@@ -25,7 +36,10 @@
     }
 }
 .benefits-line__line {
-
+    @media screen and (max-width: 479px) {
+        width: 320px;
+    }
+       
     @media screen and (max-width: 767px) {
         text-align: center;
     }
@@ -57,6 +71,7 @@
      display: block;
     list-style: none;
     color: var(--ptext-color);
+
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
@@ -67,6 +82,9 @@
         align-self: flex-end;
 
     }
+    @media screen and (max-width: 479px) {
+        width: 310px;
+    }
 
 }
 
@@ -76,7 +94,8 @@
 .benefits-line__text-nodemiddle,
 .benefits-line__text-nodefinish {
     align-items: center;
-     @media screen and (max-width: 767px) {
+   
+    @media screen and (max-width: 767px) {
         &:not(:last-child) {
         margin-bottom: 30px;
         }
@@ -103,6 +122,12 @@
     }
 
     }
+    
+    @media screen and (max-width: 479px) {
+        width: 300px;
+    }
+
+
 }
    
 // .text-size {
@@ -120,6 +145,10 @@
     content: "";
     width: 450px;
     height: 120px;
+
+    @media screen and (max-width: 479px) {
+        width: 320px;
+    }
     @media screen and (min-width: 768px) {
         width: 354px;
     }
@@ -137,6 +166,10 @@
     content: "";
     width: 450px;
     height: 120px;
+
+    @media screen and (max-width: 479px) {
+        width: 320px;
+    }
     @media screen and (min-width: 768px) {
         width: 354px;
     }
@@ -164,6 +197,10 @@
     content: "";
     width: 450px;
     height: 120px;
+
+    @media screen and (max-width: 479px) {
+        width: 320px;
+    }
     @media screen and (min-width: 768px) {
         width: 354px;
     }
@@ -189,6 +226,10 @@
     content: "";
     width: 450px;
     height: 120px;
+
+    @media screen and (max-width: 479px) {
+        width: 320px;
+    }
     @media screen and (min-width: 768px) {
         width: 354px;
     }
