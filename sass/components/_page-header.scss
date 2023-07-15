@@ -89,6 +89,7 @@
         @media screen and (max-width: 767px) {
             display: flex;
             flex-direction: column;
+            height: 100vh;
         }
        
     } 
@@ -101,7 +102,7 @@
         position: absolute;
             top: 100%;
             left: 0;
-            width: 100%;
+            z-index: 2000;
             height: 90vh;
     }
     @media screen and (min-width: 1200px) {
@@ -395,11 +396,12 @@
 // }
 .menu-link {
     display: flex;
+    flex-direction: column;
     
     font-family: 'Roboto';
         font-style: normal;
         font-weight: 500;
-        font-size: 18px;
+        font-size: 22px;
         line-height: calc(22/18);
         letter-spacing: 0.02em;
     
@@ -419,6 +421,5 @@
 
 .menu-link__item:not(:last-child) {
  margin-right: 20px;
- border-right: 2px solid rgba(33, 33, 33, 0.2);
-
+ margin-bottom: 8px;
 }

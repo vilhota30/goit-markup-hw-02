@@ -101,11 +101,12 @@
     align-items: center;
     width: 450px;
     height: 404px;
-    @media screen and (min-width: 480px) {
-        &:not(:last-child) {
-        margin-bottom: 30px;
-    }
-} 
+
+     @media screen and (min-width: 480px) {
+         
+         margin-bottom: 30px;
+
+    } 
 
     @media screen and (min-width: 768px) {
     display: block;
@@ -120,31 +121,9 @@
        width: 370px;
        height: 404px;
     }
-        // @media screen and (min-width: 480px) {
-        //     width: 450px;
-        //     height: 404px;
-        //     margin-bottom: 30px;
-        // }
-    
-        // @media screen and (min-width: 768px) {
-        //     width: 354px;
-        //     height: 440px;
-        // }
-    
-        // @media screen and (min-width: 1200px) {
-        //     width: 370px;
-        //     height: 404px;
-        // }
+       
  }
 
-
-//  .experience__example:nth-child(3n) {
-//      margin-right: 0px;
-//  }
-
-//  .experience__example:nth-last-child(-n+3) {
-//      margin-bottom: 0px;
-//  }
  .experience__example .team-thumb {
      position: relative;
      overflow: hidden;

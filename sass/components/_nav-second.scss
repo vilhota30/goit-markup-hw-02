@@ -59,6 +59,8 @@
 
     @include transitive (color, border);
     display: flex;
+    flex-wrap: wrap;
+    width: 450px;
     justify-content: center;
     align-items: center;
     color: var(--logofirst-color);
